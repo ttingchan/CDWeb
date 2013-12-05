@@ -15,6 +15,7 @@ import com.google.inject.Inject;
 
 public class AlbumDAO implements RowMapper<Album> 
 {
+	private JdbcTemplate jdbc;
 	public Album mapRow(ResultSet rs, int rownum) throws SQLException
 	{
 		Album album = new Album(); 
@@ -28,4 +29,6 @@ public class AlbumDAO implements RowMapper<Album>
 		album.setAuthorId(rs.getInt("id_author"));
 		return album;
 	}
+	
+	//List<Album> 
 }
