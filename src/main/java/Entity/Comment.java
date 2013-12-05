@@ -25,7 +25,13 @@ public class Comment {
 	private Integer id;
 	private String content;
 	private Date dateComm;
-	
+	private int num_like;
+	private int id_album;
+	private int id_user;
+	Comment()
+	{
+		
+	}
 	
 	Comment(Integer id, String content, Date dateComm)
 	{
@@ -39,9 +45,19 @@ public class Comment {
 		return this.id;
 	}
 	
+	public void setId(Integer id)
+	{
+		this.id = id;
+	}
+	
 	String getContent()
 	{
 		return this.content;
+	}
+	
+	public void setContetn(String content)
+	{
+		this.content = content;
 	}
 	
 	Date getDateComm()
@@ -49,4 +65,38 @@ public class Comment {
 		return this.dateComm;
 	}
 	
+	public void setDateComm(Date dateComm)
+	{
+		this.dateComm = dateComm;
+	}
+	
+	public int getNumLike()
+	{
+		return this.num_like;
+	}
+	
+	public void setNumLike(int numlike)
+	{
+		this.num_like = numlike;
+	}
+	
+	public int getIdAlbum()
+	{
+		return this.id_album;
+	}
+	
+	public void setIdAlbum(int idAlbum)
+	{
+		this.id_album = idAlbum;
+	}
+	
+	public int getIdUser()
+	{
+		return this.id_user;
+	}
+	
+	public void setIdUser(int idUser)
+	{
+		this.id_user = idUser;
+	}
 }

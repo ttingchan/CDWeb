@@ -26,12 +26,17 @@ public class Type {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	private String type;
+	private String name;
 	
-	Type(int id, String type)
+	Type()
+	{
+		
+	}
+	
+	Type(int id, String name)
 	{
 		this.id = id;
-		this.type = type;
+		this.name = name;
 	}
 	
 	public int getId()
@@ -39,15 +44,24 @@ public class Type {
 		return this.id;
 	}
 	
-	public String getType()
+	public void setId(int id)
 	{
-		return this.type;
+		this.id = id;
+	}
+	public String getName()
+	{
+		return this.name;
+	}
+	
+	public void setName(String name)
+	{
+		this.name = name;
 	}
 	
 	@Override
 	public int hashCode()
 	{
-		return Objects.hash(id,type);
+		return Objects.hash(id,name);
 	}
 	
 	@Override
@@ -63,6 +77,6 @@ public class Type {
 		}
 		final Type other = (Type)obj;
 		return Objects.equals(this.id, other.id)
-				&& Objects.equals(this.type, other.type);
+				&& Objects.equals(this.name, other.name);
 	}
 }

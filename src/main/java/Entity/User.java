@@ -1,5 +1,6 @@
 package Entity;
 
+import java.sql.Date;
 import java.util.List;
 import java.util.Objects;
 
@@ -20,13 +21,27 @@ public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	private String name;
+	private String nickname;
 	private String psw;
+	private String firstname;
+	private String lastname;
+	private Date birthday;
+	private String address;
+	private String city;
+	private String country;
+	private String zip;
+	private String phonenum;
 	
+	
+	
+	
+	User(){
+		
+	}
 	User(int id, String name, String password)
 	{
 		this.id = id;
-		this.name = name;
+		this.nickname = name;
 		this.psw = password;
 	}
 	
@@ -35,9 +50,19 @@ public class User {
 		return this.id;
 	}
 	
-	public String getName()
+	public void setId(int Id)
 	{
-		return this.name;
+		this.id = id;
+	}
+	
+	public String getNickname()
+	{
+		return this.nickname;
+	}
+	
+	public void setNickname(String nickname)
+	{
+		this.nickname = nickname;
 	}
 	
 	public String getPsw()
@@ -45,9 +70,94 @@ public class User {
 		return this.psw;
 	}
 	
+	public void setPsw(String psw)
+	{
+		this.psw = psw;
+	}
+	
+	public String getFirstname()
+	{
+		return this.firstname;
+	}
+	
+	public void setFirstname(String firstName)
+	{
+		this.firstname = firstName;
+	}
+	
+	public String getLastname()
+	{
+		return this.lastname;
+	}
+	
+	public void setLastName(String lastName)
+	{
+		this.lastname = lastName;
+	}
+	
+	public Date getBirthday()
+	{
+		return this.birthday;
+	}
+	
+	public void setBirthday(Date birthday)
+	{
+		this.birthday = birthday;
+	}
+	
+	public String getAddress()
+	{
+		return this.address;
+	}
+	
+	public void setAddress(String address)
+	{
+		this.address = address;
+	}
+	
+	public String getCity()
+	{
+		return this.city;
+	}
+	
+	public void setCity(String city)
+	{
+		 this.city = city;
+	}
+	
+	public String getCountry()
+	{
+		return this.country;
+	}
+	
+	public void setCountry(String country)
+	{
+		this.country = country;
+	}
+	
+	public String getZip()
+	{
+		return this.zip;
+	}
+	
+	public void setZip(String zip)
+	{
+		this.zip = zip;
+	}
+	
+	public String getPhonenum()
+	{
+		return this.phonenum;
+	}
+	
+	public void setPhonenum(String phonenum)
+	{
+		this.phonenum = phonenum;
+	}
+	
 	@Override
 	public int hashCode(){
-		return Objects.hash(this.id,this.name,this.psw) ;
+		return Objects.hash(this.id,this.nickname,this.psw) ;
 	}
 	
 	@Override
@@ -64,7 +174,7 @@ public class User {
 		}
 		final User other = (User)obj;
 		return Objects.equals(this.id, other.id)
-				&& Objects.equals(this.name, other.name)
+				&& Objects.equals(this.nickname, other.nickname)
 				&& Objects.equals(this.psw, other.psw); 
 						
 	}

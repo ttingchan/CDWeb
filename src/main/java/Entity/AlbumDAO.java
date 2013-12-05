@@ -15,14 +15,6 @@ import com.google.inject.Inject;
 
 public class AlbumDAO implements RowMapper<Album> 
 {
-	
-	private JdbcTemplate jdbc;
-	
-	@Inject
-	AlbumDAO(DataSource dataSource)
-	{
-		jdbc = new JdbcTemplate(dataSource);
-	}
 	public Album mapRow(ResultSet rs, int rownum) throws SQLException
 	{
 		Album album = new Album(); 

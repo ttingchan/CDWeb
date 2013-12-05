@@ -23,6 +23,11 @@ public class Author {
 	private int id;
 	private String name;
 	
+	Author()
+	{
+		
+	}
+	
 	Author(int id, String name)
 	{
 		this.id = id;
@@ -34,9 +39,19 @@ public class Author {
 		return this.id;
 	}
 	
+	public void setId(Integer id)
+	{
+		this.id = id;
+	}
+	
 	public String getname()
 	{
 		return this.name;
+	}
+	
+	public void setName(String name)
+	{
+		this.name = name;
 	}
 	
 	@Override
