@@ -8,13 +8,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.google.inject.Inject;
 
-import Entity.AlbumDAO;
-import Entity.Author;
-import Entity.Comment;
-import Entity.Song;
-import Entity.Type;
-import Entity.User;
-import Entity.UserDAO;
+import Entity.*;
+
 
 public class JdbcCDWebDAO implements CDWebDAO 
 {
