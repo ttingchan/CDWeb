@@ -168,6 +168,11 @@
 		<artifactId>guice-persist</artifactId>
 		<version>4.0-beta</version>
 	</dependency>
+	<dependency>
+		<groupId>dom4j</groupId>
+		<artifactId>dom4j</artifactId>
+		<version>20040902.021138</version>
+	</dependency>
   </dependencies>
   <build>
     <finalName>CDWeb</finalName>

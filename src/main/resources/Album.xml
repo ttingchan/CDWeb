@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<albums>
+	<album>
+		<name>Empire Burlesque</name>
+		<author>Bob Dylan</author>
+		<issuing_date>1985-05-07</issuing_date>
+		<description>bien</description>
+		<price>10.9</price>	
+	</album>
+	
+	<album>
+		<name>Hide your heart</name>
+		<author>Bonnie Tyler</author>
+		<issuing_date>1988</issuing_date>
+		<description>a good record</description>
+		<price>11.2</price>
+	</album>
+
+	<album>
+		<name>Greatest Hits</name>
+		<author>Dolly Parton</author>
+		<issuing_date>1982</issuing_date>
+		<description>Greatest Hits</description>
+		<price>10.0</price>
+	</album>
+	
+	<album>
+		<name>Still got the blues</name>
+		<author>Gary Moore</author>
+		<issuing_date>1990</issuing_date>
+		<description>Still got the blues</description>
+		<price>10.4</price>
+	</album>
+	
+	<album>
+		<name>Eros</name>
+		<author>Eros Raazzotti</author>
+		<issuing_date>1990</issuing_date>
+		<description>Eros</description>
+		<price>11.3</price>
+	</album>
+	
+	<album>
+		<name>One night only</name>
+		<author>Bee Gees</author>
+		<issuing_date>1998</issuing_date>
+		<description>One night only</description>
+		<price>12.0</price>
+	</album>
+	
+	<album>
+		<name>Sylvias Mother</name>
+		<author>Dr.Hook</author>
+		<issuing_date>1973</issuing_date>
+		<description>Sylvias Mother</description>
+		<price>10.6</price>
+	</album>
+	
+	<album>
+		<name>Maggie May</name>
+		<author>Rod Stewart</author>
+		<issuing_date>1990</issuing_date>
+		<description>Maggie May</description>
+		<price>11.2</price>
+	</album>
+	
+	<album>
+		<name>Romanza</name>
+		<author>Andrea Bocelli</author>
+		<issuing_date>1996</issuing_date>
+		<description>Romanza</description>
+		<price>10.8</price>
+	</album>
+	
+	<album>
+		<name>When a man loves a woman</name>
+		<author>Percy Sledge</author>
+		<issuing_date>1987</issuing_date>
+		<description>When a man loves a woman</description>
+		<price>8.7</price>
+	</album>
+	
+	<album>
+		<name>Black Angel</name>
+		<author>Savage Rose</author>
+		<issuing_date>1995</issuing_date>
+		<description>Black Angel</description>
+		<price>10.9</price>
+	</album>
+
+	<album>
+		<name>1999 Grammy Nominess</name>
+		<author>Many</author>
+		<issuing_date>1999</issuing_date>
+		<description>Grammy Nominess</description>
+		<price>9.7</price>
+	</album>
+	
+	<album>
+		<name>For the good times</name>
+		<author>Kenny Rogers</author>
+		<issuing_date>1995</issuing_date>
+		<description>For the good times</description>
+		<price>8.7</price>
+	</album>
+	
+	<album>
+		<name>Big Willie style</name>
+		<author>Will Smith</author>
+		<issuing_date>1997</issuing_date>
+		<description>Big Willie style</description>
+		<price>9.9</price>
+	</album>
+	
+	<album>
+		<name>Tupelo Honey</name>
+		<author>Van Morrison</author>
+		<issuing_date>1971</issuing_date>
+		<description>Tupelo Honey</description>
+		<price>8.2</price>
+	</album>
+	
+	<album>
+		<name>The very best of</name>
+		<author>Cat Stevens</author>
+		<issuing_date>1990</issuing_date>
+		<description>The very best of</description>
+		<price>8.9</price>
+	</album>
+	
+	<album>
+		<name>Stop</name>
+		<author>Sam Brown</author>
+	</album>
+</albums>
