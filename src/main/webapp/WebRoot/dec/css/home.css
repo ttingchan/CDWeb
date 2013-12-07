@@ -16,11 +16,16 @@ body
 	background-size:90% 98%;
 	background-position:center;
 }
+.header{
+width:100%;
+height:20%;
+/*background:#FF3;*/
 
+}
 .top{
 width:70%;
 height:20%;
-/*background:#ff7f50;*/
+/*background-image:url(../top1.jpg);*/
 margin:0px;
 border:0px;
 float:left;
@@ -28,15 +33,16 @@ float:left;
 .top img{
 width:850px;
 height:120px;
-
+filter:alpha(opacity=0);
 }
 .login{
-overflow:hidden;
+/*overflow:hidden;*/
 /*margin-left:80%;*/
 width:30%;
 height:20%;
-background-image:url(background.jpg);
-
+margin:0px 0px 0px 0px;
+/*background-image:url(../background.jpg);*/
+float:right;
 /*float:right;*/
 /*text-align:center;*/
 /*position:relative;*/
@@ -48,7 +54,8 @@ text-align:center;
 }
 .nav{
 /*overflow:hidden;*/
-width:850px;
+width:100%;
+/*width:850px;*/
 height:10%;
 /*background:#8b8378;*/
 float:left;
@@ -103,7 +110,7 @@ z-index:1;
 display:block; 
 text-align:center; 
 text-decoration:none; 
-width:170px; 
+width:200px; 
 height:60px; 
 color:#000; 
 /*border:1px solid #fff;*/
@@ -144,8 +151,9 @@ color:#000;
 }
 .searchBar
 {  overflow:hidden;
-   width: 300px;
-   height:10%;
+   width: 613px;
+   height:60px;
+   background:#FF3;
    /*border:1px solid lightgray;
    text-align: center;
    vertical-align: middle;
@@ -154,7 +162,7 @@ color:#000;
 
 .searchtext
 {
-    width: 200px;
+    width: 300px;
     height: 30px;
     margin-top: 15px;
     margin-bottom: 5px;
@@ -164,8 +172,8 @@ color:#000;
 
 .searchbutton1/*, .searchbutton2*/
 {
-    width: 70px;
-    height: 25px;
+    width: 150px;
+    height: 30px;
     /*margin-left: 30%;
     margin-bottom: 10px;
     margin-top: 8px;*/
