@@ -31,17 +31,23 @@ public class JdbcCDWebDAO implements CDWebDAO
 
 	public List<Author> GetAllAuthor(int id) {
 		// TODO Auto-generated method stub
-		return null;
+		String sql = "SELECT * FROM author where id = ?";
+		List<Author> author = jdbc.query(sql, new AuthorDAO(),id);
+		return author;
 	}
 
 	public List<Comment> GetAllComment(int id) {
 		// TODO Auto-generated method stub
-		return null;
+		String sql = "SELECT * FROM comment where id = ?";
+		List<Comment> comment = jdbc.query(sql, new CommentDAO(),id);
+		return comment;
 	}
 
 	public List<Song> GetAllSong(int id) {
 		// TODO Auto-generated method stub
-		return null;
+		String sql ="SELECT * FROM song where id = ?";
+		List<Song> song = jdbc.query(sql, new SongDAO(),id);
+		return song;
 	}
 
 	public List<Type> GetAllType(int id) {
