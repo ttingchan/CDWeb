@@ -1,8 +1,9 @@
+<%@ page language="java" import="java.util.*" pageEncoding="GB18030"%>
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 <title>CD</title>
-<link rel="stylesheet" href="css/home.css"/>
+<link rel="stylesheet" href="dec/css/home.css"/>
 </head>
 <body background="background.jpg">
 <div class ="Layout">

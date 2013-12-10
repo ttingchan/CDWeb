@@ -1,8 +1,9 @@
+<%@ page language="java" import="java.util.*" pageEncoding="GB18030"%>
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 <title>CD</title>
-<link rel="stylesheet" href="css/home.css"/>
+<link rel="stylesheet" href="dec/css/home.css"/>
 <style type="text/css">
 fieldset
 {
@@ -58,10 +59,11 @@ form
 }
 </style>
 </head>
-<body background="background.jpg">
+<body background="dec/img/background.jpg">
 <div class ="Layout">
+<div class ="header">
 <div class="top">
-<img src ="cd.jpg" alt ="logopicture">
+<!--  <img src ="dec/img/cd.jpg" alt ="logopicture">-->
 <!--<h1>logo and slogan</h1>-->
 </div>
 <div class="login">
@@ -73,6 +75,7 @@ form
   <p>password: <input type="text" name="lname" /></p>
   <input type="submit" value="login" />&nbsp&nbsp&nbsp<a href = "">forgot?</a>&nbsp&nbsp<a href = "register.html"> register</a>
 </form>
+</div>
 </div>
 <div class="nav">
 

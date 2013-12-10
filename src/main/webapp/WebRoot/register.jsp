@@ -1,9 +1,9 @@
-
+<%@ page language="java" import="java.util.*" pageEncoding="GB18030"%>
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 <title>CD</title>
-<link rel="stylesheet" href="css/home.css"/>
+<link rel="stylesheet" href="dec/css/home.css"/>
 <script type="text/javascript" src="js/register.js" ></script>  
 <script type="text/javascript" src="js/verification.js" ></script>
 <style type="text/css">
@@ -26,8 +26,9 @@
     
 </style>
 </head>
-<body background="background.jpg">
+<body background="dec/img/background.jpg">
 <div class ="Layout">
+<div class="header">
 <div class="top">
 <img src ="cd.jpg" alt ="logopicture">
 <!--<h1>logo and slogan</h1>-->
@@ -41,6 +42,7 @@
   <p>password: <input type="text" name="lname" /></p>
   <input type="submit" value="login" />&nbsp&nbsp&nbsp<a href = "">forgot?</a>&nbsp&nbsp<a href = ""> register</a>
 </form>
+</div>
 </div>
 <div class="nav">
 
@@ -74,16 +76,7 @@
                        <td class="td3"><span id="maildiv"></span></td>
                    </tr>
                    
-                   <tr>
-                       <td><strong><font color="red">*</font>Type:</strong></td>
-                       <td class="td2">
-                       <select name ="type" style="width: 155px;" onchange="return CheckType();" >
-                              <option name="type1" value="" ></option>
-                            <option name="type2" value="normaluser" >normal user</option>
-                            <option name="type3" value="organiser">orgniser</option></select>
-                       </td>
-                       <td class="td3"><span id="typediv"></span></td>
-                   </tr>
+                   
                    
                    <tr>
                        <td><strong><font color="red">*</font>Password:</strong></td>
