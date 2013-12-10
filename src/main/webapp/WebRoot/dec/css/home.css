@@ -1,16 +1,16 @@
 
 html{
-height:111%;
+height:105%;
 }
 
 .Layout{
  width:100%;
- height:111%;
+ height:105%;
 }
 body
 {   margin-left:5%;
     margin-right:5%;
-    height:111%;
+    height:105%;
 	background-repeat:no-repeat;
 	-moz-background-size:40% 100%;
 	background-size:90% 98%;
@@ -18,13 +18,13 @@ body
 }
 .header{
 width:100%;
-height:31%;
+height:25%;
 /*background:#FF3;*/
 /*background:url(WebRoot/dec/img/cd.jpg);*/
 }
 .top{
 width:70%;
-height:31%;
+height:25%;
 /*background-image:url(../top1.jpg);*/
 margin:0px;
 border:0px;
@@ -39,7 +39,7 @@ filter:alpha(opacity=0);
 /*overflow:hidden;*/
 /*margin-left:80%;*/
 width:30%;
-height:31%;
+height:25%;
 margin:50px 0px 0px 0px;
 /*background-image:url(../background.jpg);*/
 float:right;
