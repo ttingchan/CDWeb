@@ -4,12 +4,17 @@
 <html>
 <head><meta charset="utf-8" />
 <title>CD</title>
-<link rel="stylesheet" type="text/css" href="WebRoot/dec/css/home.css"/>
+<link rel="stylesheet" type="text/css" href="dec/css/home.css"/>
+<style type="text/css">
+            
+                   
+                table tr td{width: 230px; height: 50px;text-align: left;}
+        </style>
 </head>
-<body background="WebRoot/dec/img/background.jpg">
+<body background="dec/img/background.jpg">
 
 <div class ="Layout">
-<div class="header" style="background:url(WebRoot/dec/img/cdworld1.png)" >
+<div class="header" style="background:url(dec/img/cdworld.png)" width="100%" height="100%">
 <!--<img src="WebRoot/dec/img/cd1.png" width="100%" height="100%"/> -->
 <div class="top">
 <!--<img src ="top1.jpg" alt ="logopicture">-->
@@ -76,7 +81,37 @@
 
 
 <div class="content">
-<h1>content</h1>
+
+<table align="center" style="background:#000000">
+                <tr>
+                    <td><a href="index.php"></a>
+                       
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                       <h3 style="font-family:Times">LOGIN</h3>
+                    <form method="post" action="php/login.php" >
+                        <p style="font-family:Times">USERNAME:<input type="text" name="loginname" class="loginname" style="font-family:Times"/></p>
+                        
+                        <p style="font-family:Times">PASSWORD:<input type="password" name="password" class="password" style="font-family:Times"/></p>
+                        
+                        <!--
+                       <input type="text" name="authcode" id="textfield"/>
+                       <img src = "php/checkcode.php" /><br />        -->               
+                        <input type="submit" value="LOGIN" name="submit" class="submit" style="font-family:Times" />                      
+                    </form>
+
+                    <h4><a href="#" style="font-family:Times">FORGOT THE PASSWORD?</a></h4> 
+                    <h4><a href="register.php" style="font-family:Times"> REGISTER</a></h4>  
+                    </td>
+                    
+                      
+                   
+                </tr>
+            </table>
+              
 </div>
 
 <div class="bot">
