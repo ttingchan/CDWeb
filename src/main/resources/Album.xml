@@ -131,5 +131,72 @@
 	<album>
 		<name>Stop</name>
 		<author>Sam Brown</author>
+		<issuing_date>1988</issuing_date>
+		<description>Stop</description>
+		<price>8.9</price>
+	</album>
+	
+	<album>
+		<name>Bridge of Spies</name>
+		<author>T'Pau</author>
+		<issuing_date>1987</issuing_date>
+		<description>Bridge of Spies</description>
+		<price>7.9</price>
+	</album>
+	
+	<album>
+		<name>Private Dancer</name>
+		<author>Tina Turner</author>
+		<issuing_date>1983</issuing_date>
+		<description>Private Dancer</description>
+		<price>8.9</price>
+	</album>
+	
+	<album>
+		<name>Midt om natten</name>
+		<author>Kim Larsen</author>
+		<issuing_date>1983</issuing_date>
+		<description>Midt om natten</description>
+		<price>7.8</price>
+	</album>
+	
+	<album>
+		<name>Pavarotti Gala Concert</name>
+		<author>Luciano Pavarotti</author>
+		<issuing_date>1983</issuing_date>
+		<description>Pavarotti Gala Concert</description>
+		<price>7.8</price>
+	</album>
+	
+	<album>
+		<name>The dock of the bay</name>
+		<author>Otis Redding</author>
+		<issuing_date>1987</issuing_date>
+		<description>The dock of the bay</description>
+		<price>7.9</price>
+	</album>
+	
+	<album>
+		<name>Picture book</name>
+		<author>Simply Red</author>
+		<issuing_date>1985</issuing_date>
+		<description>Picture book</description>
+		<price>7.2</price>
+	</album>
+	
+	<album>
+		<name>Red</name>
+		<author>The Communards</author>
+		<description>Red</description>
+		<issuing_date>1987</issuing_date>
+		<price>7.8</price>
+	</album>
+	
+	<album>
+		<name>Unchain my heart</name>
+		<author>Joe Cocker</author>
+		<issuing_date>1987</issuing_date>
+		<description>Unchain my heart</description>
+		<price>8.2</price>
 	</album>
 </albums>
