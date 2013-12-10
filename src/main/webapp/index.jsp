@@ -9,7 +9,8 @@
 <body background="WebRoot/dec/img/background.jpg">
 
 <div class ="Layout">
-<div class="header">
+<div class="header" style="background:url(WebRoot/dec/img/cdworld.png)" width="100%" height="100%">
+<!--<img src="WebRoot/dec/img/cd1.png" width="100%" height="100%"/> -->
 <div class="top">
 <!--<img src ="top1.jpg" alt ="logopicture">-->
 <!--<h1>logo and slogan</h1>-->
@@ -20,9 +21,9 @@
 <h5>password:</h5>
 <h4>forgot? register</h4>-->
 <form action="/example/html/form_action.asp" method="get">
-  <p>username: <input type="text" name="fname" /></p>
-  <p>password: <input type="text" name="lname" /></p>
-  <input type="submit" value="login" />&nbsp&nbsp&nbsp<a href = "forgotpasswd.html">forgot?</a>&nbsp&nbsp<a href = "register.html"> register</a>
+  <p style="text-align:left;font-family:Times;color:white">USERNAME: <input type="text" name="fname" /></p>
+  <p style="text-align:left;font-family:Times;color:white">PASSWORD: <input type="text" name="lname" /></p>
+  <input type="submit" value="LOGIN" style="font-family:Times"/>&nbsp&nbsp&nbsp<a href = "WebRoot/forgotpasswd.jsp" style="font-family:Times">FORGOT?</a>&nbsp&nbsp<a href = "WebRoot/register.jsp" style="font-family:Times"> REGISTER</a>
 </form>
 </div>
 </div>
@@ -32,12 +33,12 @@
                                 
                                 <li><a href = "./event.php?action=musique"  >CD</a>
                                         <ul>
-                                        <li><a href = "./pop1.html">Blue</a></li>
+                                        <li><a href = "./WebRoot/pop1.jsp">Blue</a></li>
                                         <li><a href = "./event.php?action=concert">Concert</a></li>
                                         <li><a href = "./event.php?action=soiree">jazz</a>
                                         </ul>
                                 </li>
-                                <li><a href = "./event.php?action=art">Author</a>
+                                <li><a href = "./event.php?action=art">AUTHOR</a>
                                         <ul>
                                         <li><a href = "./event.php?action=expositions">Male</a></li>
                                         <li><a href = "./event.php?action=musee">Female</a></li>
@@ -45,7 +46,7 @@
                                         </ul>
                                 </li>
 
-                                <li><a href = "./register.html">register</a>
+                                <li><a href = "./register.html">REGISTER</a>
                                         <!--<ul>
                                         <li><a href = "./event.php?action=sport">Sport</a></li>
                                         <li><a href = "./event.php?action=jeuxvideo">Jeux Video</a></li>
