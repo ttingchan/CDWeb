@@ -1,6 +1,6 @@
 package Entity;
 
-import java.sql.Date;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
@@ -27,15 +27,17 @@ public class User {
 	private String lastname;
 	private Date birthday;
 	private String address;
+	private String sex;
+	private String mail;
 	private String city;
 	private String country;
 	private String zip;
 	private String phonenum;
+	boolean valid;
 	
 	
 	
-	
-	User(){
+	public User(){
 		
 	}
 	User(int id, String name, String password)
@@ -100,11 +102,16 @@ public class User {
 		return this.birthday;
 	}
 	
-	public void setBirthday(Date birthday)
+	public void setBirthday(Date birthday2)
 	{
-		this.birthday = birthday;
+		this.birthday = birthday2;
 	}
-	
+	public String getMail(){
+		return this.mail;
+	}
+	public void setMail(String mail){
+		this.mail=mail;
+	}
 	public String getAddress()
 	{
 		return this.address;
@@ -114,7 +121,13 @@ public class User {
 	{
 		this.address = address;
 	}
-	
+	public String getSex()
+	{
+		return this.sex;
+	}
+	public void setSex(String sex){
+		this.sex=sex;
+	}
 	public String getCity()
 	{
 		return this.city;
@@ -178,4 +191,11 @@ public class User {
 				&& Objects.equals(this.psw, other.psw); 
 						
 	}
+	public boolean isValid() {
+	       return valid;
+		}
+
+	    public void setValid(boolean newValid) {
+	       valid = newValid;
+		}	
 }
