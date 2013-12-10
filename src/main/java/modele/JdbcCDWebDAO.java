@@ -60,4 +60,25 @@ public class JdbcCDWebDAO implements CDWebDAO
 		return null;
 	}
 
+	public List<Album> getSearchAlbumByString(String str) {
+		// TODO Auto-generated method stub
+		String sql = "SELECT * FROM album WHERE CONCAT(name,description) LIKE '%'+?+'%'";
+		List<Album> album = jdbc.query(sql, new AlbumDAO(),str);
+		return album;
+	}
+
+	public List<Song> getSearchSongByString(String str) {
+		// TODO Auto-generated method stub
+		String sql = "SELECT * FROM song WHERE CONCAT(name, description) LIKE '%'+?+'%'";
+		List<Song> song = jdbc.query(sql, new SongDAO(),str);
+		return song;
+	}
+
+	public List<Author> getSearchAuthorByString(String str) {
+		// TODO Auto-generated method stub
+		String sql = "SELECT * FROM author WHERE name LIKE '%'+?+'%'";
+		List<Author> author = jdbc.query(sql, new AuthorDAO(),str);
+		return author;
+	}
+
 }

@@ -17,4 +17,12 @@ public interface CDWebDAO {
 	public List<Type> GetAllType(int id);
 	
 	public List<User> GetAllUser(int id);
+	
+	public List<Album> getSearchAlbumByString(String str);
+	
+	public List<Song> getSearchSongByString(String str);
+	
+	public List<Author> getSearchAuthorByString(String str);
+	
+	//public List<Type> 
 }
