@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.4
+-- version 3.5.1
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2013 年 12 月 07 日 15:15
--- 服务器版本: 5.6.12-log
--- PHP 版本: 5.4.12
+-- 生成日期: 2013 年 12 月 10 日 17:20
+-- 服务器版本: 5.5.24-log
+-- PHP 版本: 5.3.13
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -19,8 +19,6 @@ SET time_zone = "+00:00";
 --
 -- 数据库: `cd`
 --
-CREATE DATABASE IF NOT EXISTS `cd` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `cd`;
 
 -- --------------------------------------------------------
 
@@ -109,18 +107,20 @@ CREATE TABLE IF NOT EXISTS `type` (
 
 CREATE TABLE IF NOT EXISTS `user` (
   `id` int(10) NOT NULL,
-  `nickname` varchar(50) DEFAULT NULL,
+  `username` varchar(50) DEFAULT NULL,
   `psw` varchar(20) NOT NULL,
   `firstname` varchar(50) DEFAULT NULL,
   `lastname` varchar(50) DEFAULT NULL,
   `birthday` date DEFAULT NULL,
+  `mail` varchar(50) NOT NULL,
   `address` varchar(50) DEFAULT NULL,
+  `sex` varchar(10) NOT NULL,
   `city` varchar(50) DEFAULT NULL,
   `country` varchar(50) DEFAULT NULL,
   `zip` varchar(50) DEFAULT NULL,
   `phonenum` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `name` (`nickname`)
+  UNIQUE KEY `name` (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
