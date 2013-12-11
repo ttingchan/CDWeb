@@ -52,7 +52,7 @@ public class User {
 		return this.id;
 	}
 	
-	public void setId(int Id)
+	public void setId(int id)
 	{
 		this.id = id;
 	}
@@ -106,12 +106,15 @@ public class User {
 	{
 		this.birthday = birthday2;
 	}
+	
 	public String getMail(){
 		return this.mail;
 	}
+	
 	public void setMail(String mail){
 		this.mail=mail;
 	}
+	
 	public String getAddress()
 	{
 		return this.address;
@@ -121,13 +124,16 @@ public class User {
 	{
 		this.address = address;
 	}
+	
 	public String getSex()
 	{
 		return this.sex;
 	}
+	
 	public void setSex(String sex){
 		this.sex=sex;
 	}
+	
 	public String getCity()
 	{
 		return this.city;

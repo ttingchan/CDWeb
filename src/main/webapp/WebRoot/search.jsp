@@ -9,8 +9,8 @@
 <body>
 
 <div >
-<form method="post" action =AlbumServlet >
-	<input type="text" name="search"/>
+<form method="get" action =AlbumServlet >
+	<input type="text" name="search" />
 	<input type="hidden" name="hidden" value="search"/>
 	<input type="submit" name="submit" value="submit"/>
 </form>

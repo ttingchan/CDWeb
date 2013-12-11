@@ -64,7 +64,7 @@
                                 
                         </ul>
 						<div class="searchBar">
-                    <form method="post" action="searchevent.php?action=keySearch">
+                    <form method="post" action="AlbumServlet">
                         <input type="text" class="searchtext"/>&nbsp&nbsp
                         <input type="submit" value="search CD" class="searchbutton1"/>   
                         
