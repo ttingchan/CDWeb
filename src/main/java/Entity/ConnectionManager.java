@@ -14,14 +14,14 @@ public class ConnectionManager {
      
       try
       {
-         String url = "jdbc:odbc:" + "users"; 
+         String url = "jdbc:mysql://localhost/cd"; 
          // assuming "DataSource" is your DataSource name
 
-         Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+         Class.forName("com.mysql.jdbc.Driver");
          
          try
          {            	
-            con = DriverManager.getConnection(url,"root","root"); 
+            con = DriverManager.getConnection(url,"root",""); 
              			System.out.println("1");					
          // assuming your SQL Server's	username is "username"               
          // and password is "password"

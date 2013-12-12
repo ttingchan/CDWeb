@@ -25,9 +25,9 @@
 <!--<h5>username:</h5>
 <h5>password:</h5>
 <h4>forgot? register</h4>-->
-<form action="/example/html/form_action.asp" method="get">
-  <p style="text-align:left;font-family:Times;color:white">USERNAME: <input type="text" name="fname" /></p>
-  <p style="text-align:left;font-family:Times;color:white">PASSWORD: <input type="text" name="lname" /></p>
+<form action=LoginServlet method="get">
+  <p style="text-align:left;font-family:Times;color:white">USERNAME: <input type="text" name="username" /></p>
+  <p style="text-align:left;font-family:Times;color:white">PASSWORD: <input type="text" name="password" /></p>
   <input type="submit" value="LOGIN" style="font-family:Times"/>&nbsp&nbsp&nbsp<a href = "WebRoot/forgotpasswd.jsp" style="font-family:Times">FORGOT?</a>&nbsp&nbsp<a href = "WebRoot/register.jsp" style="font-family:Times"> REGISTER</a>
 </form>
 </div>

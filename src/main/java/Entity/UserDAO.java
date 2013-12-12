@@ -106,8 +106,10 @@ public class UserDAO implements RowMapper<User>{
 		    
 	   try 
 	   {
-	      //connect to DB 
+		   
+		  System.out.println("test");
 	      currentCon = ConnectionManager.getConnection();
+	      System.out.println("test1");
 	      stmt=currentCon.createStatement();
 	      rs = stmt.executeQuery(searchQuery);	        
 	      boolean more = rs.next();
@@ -122,6 +124,7 @@ public class UserDAO implements RowMapper<User>{
 	      //if user exists set the isValid variable to true
 	      else if (more) 
 	      {
+	    	  
 	         String firstName = rs.getString("FirstName");
 	         String lastName = rs.getString("LastName");
 		     	

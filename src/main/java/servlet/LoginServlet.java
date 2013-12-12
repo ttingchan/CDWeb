@@ -23,8 +23,8 @@ try
 {	    
 
      User user = new User();
-     user.setNickname(request.getParameter("un"));
-     user.setPsw(request.getParameter("pw"));
+     user.setNickname(request.getParameter("username"));
+     user.setPsw(request.getParameter("password"));
      System.out.print("1");
      user = UserDAO.login(user);
 	 System.out.print("2");
@@ -34,11 +34,11 @@ try
 	        
           HttpSession session = request.getSession(true);	    
           session.setAttribute("currentSessionUser",user); 
-          response.sendRedirect("userLogged.jsp"); //logged-in page      		
+          response.sendRedirect("WebRoot/login.jsp"); //logged-in page      		
      }
 	        
      else 
-          response.sendRedirect("invalidLogin.jsp"); //error page 
+          response.sendRedirect("WebRoot/login.jsp"); //error page 
 } 
 		
 		

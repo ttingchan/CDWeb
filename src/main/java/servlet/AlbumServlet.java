@@ -13,5 +13,6 @@ public class AlbumServlet extends HttpServlet
 		String str = request.getParameter("search");
 		ServletContext sc = getServletContext();
 //		String path = sc.getServletNames()request;
+		
 	}
 }
