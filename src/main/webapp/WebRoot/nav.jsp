@@ -1,34 +1,7 @@
-<%@ page language="java" import="java.util.*" pageEncoding="GB18030"%>
-
-<!DOCTYPE html>
-<html>
-<head><meta charset="utf-8" />
-<title>CD</title>
-<link rel="stylesheet" type="text/css" href="WebRoot/dec/css/home.css"/>
-</head>
-<body ><!-- background="WebRoot/dec/img/background.jpg" -->
-
-<div class ="Layout">
-<div class="header" style="background:url(WebRoot/dec/img/cdworld1.png)" >
-<!--<img src="WebRoot/dec/img/cd1.png" width="100%" height="100%"/> -->
-<div class="top">
-<!--<img src ="top1.jpg" alt ="logopicture">-->
-<!--<h1>logo and slogan</h1>-->
-
-</div>
-<div class="login">
-<!--<h5>username:</h5>
-<h5>password:</h5>
-<h4>forgot? register</h4>-->
-<form action="LoginServlet" method="get">
-  <p style="text-align:left;font-family:Times;color:white">USERNAME: <input type="text" name="username" /></p>
-  <p style="text-align:left;font-family:Times;color:white">PASSWORD: <input type="text" name="password" /></p>
-  <input type="submit" value="LOGIN" style="font-family:Times"/>&nbsp&nbsp&nbsp<a href = "WebRoot/forgotpasswd.jsp" style="font-family:Times">FORGOT?</a>&nbsp&nbsp<a href = "WebRoot/register.jsp" style="font-family:Times"> REGISTER</a>
-</form>
-</div>
-</div>
-<div class="nav">
-<!-- <h1>navigator</h1>-->
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<link rel="stylesheet" type="text/css" href="dec/css/home.css"/>
 <ul>
                                 
                                 <li><a href = "./event.php?action=musique"  >CD</a>
@@ -64,24 +37,10 @@
                                 
                         </ul>
 						<div class="searchBar">
-                    <form method="post" action=AblumServlet>
+                    <form method="post" action="searchevent.php?action=keySearch">
                         <input type="text" class="searchtext"/>&nbsp&nbsp
                         <input type="submit" value="search CD" class="searchbutton1"/>   
                         
                     </form>
                        <!-- <input type="button" value="for more detail" onclick="self.location.href='searchevent.php';" class="searchbutton2"/>-->
                     </div>
-</div>
-
-
-
-<div class="content">
-<h1>content</h1>
-</div>
-
-<div class="bot">
-<h1>bottom</h1>
-</div>
-</div>
-</body>
-</html>
