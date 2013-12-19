@@ -15,6 +15,12 @@ public class JdbcCDWebDAO implements CDWebDAO
 {
 	private JdbcTemplate jdbc;
 	
+	
+	public JdbcCDWebDAO()
+	{
+		
+	}
+	
 	@Inject
 	JdbcCDWebDAO(DataSource dataSource)
 	{

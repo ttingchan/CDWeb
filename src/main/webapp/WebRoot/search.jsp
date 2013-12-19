@@ -9,11 +9,19 @@
 <body>
 
 <div >
-<form method="get" action =AlbumServlet >
+<form method="get" action =SearchServlet >
 	<input type="text" name="search" />
-	<input type="hidden" name="hidden" value="search"/>
 	<input type="submit" name="submit" value="submit"/>
 </form>
+</div>
+<div>
+
+	<p>
+		<%
+		String attribut = (String) request.getAttribute("noResult");
+		out.println(attribut);
+		%>
+	</p>
 </div>
 </body>
 </html>
