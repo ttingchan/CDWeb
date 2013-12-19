@@ -119,7 +119,7 @@ height:60px;
 color:#000; 
 /*border:1px solid #fff;*/
 border-width:0px 0px 0 0;
-background:#FF3; 
+background:#666666; 
 line-height:50px; 
 font-size:11px;
 }
@@ -129,8 +129,8 @@ display: none;
 }
 
 .nav ul li:hover a {
-color:#FFEE73; 
-background:#A69200;
+color:#000000; 
+background:#FFFFFF;
 }
 
 .nav ul li:hover ul {
@@ -139,25 +139,25 @@ position:absolute;
 top:60px; 
 left:0; 
 width:119px;
-background:#A69200;
+background:#FFFFFF;
 color:#FFEE73;
 }
 
 .nav ul li:hover ul li a {
 display:block; 
-background:#A69200; 
-color:#FFEE73;
+background:#666666; 
+color:#000000;
 }
 
 .nav ul li:hover ul li a:hover {
-background:#FF3; 
-color:#000;
+background:#FFFFFF; 
+color:#000000;
 }
 .searchBar
 {  overflow:hidden;
-   width: 613px;
+   width: 614px;
    height:60px;
-   background:#FF3;
+   background:#666666;
    /*border:1px solid lightgray;
    text-align: center;
    vertical-align: middle;
