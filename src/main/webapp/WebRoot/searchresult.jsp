@@ -27,6 +27,10 @@
 </td>
 </tr>
 <tr>
+<td>type:
+</td>
+</tr>
+<tr>
 <td>year:
 </td>
 </tr>
