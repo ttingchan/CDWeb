@@ -20,9 +20,12 @@ public class SearchServlet extends HttpServlet {
 	{
 		String search = request.getParameter("search");
 		AlbumDAO searchRe = new AlbumDAO();
+		SongDAO songRe = new SongDAO();
+		List<Song> songSearch = null;
 		List<Album> albumSearch = null;
 		try {
 			albumSearch = searchRe.getSearchAlbumByString(search);
+			songSearch = songRe.getSearchSongByString(search);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -30,7 +33,7 @@ public class SearchServlet extends HttpServlet {
 	//	List<Song> songSearch = searchRe.getSearchSongByString(search);
 	//	List<Author> authorSearch = searchRe.getSearchAuthorByString(search);
 		HttpSession session = request.getSession();
-		if(albumSearch == null /*&& songSearch == null && authorSearch == null*/)
+		if(albumSearch == null && songSearch == null /*&& authorSearch == null*/)
 		{
 			String message = "Sorry, there is no result for your search";
 			request.setAttribute("noResult", message);

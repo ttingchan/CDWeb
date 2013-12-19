@@ -40,7 +40,7 @@ public class AlbumDAO implements RowMapper<Album>
 		Connection currentCon = ConnectionManager.getConnection();
 	    Statement statement= (Statement) currentCon.createStatement();
 		String sql = "SELECT * FROM album WHERE name LIKE '%"+str+"%'";
-		System.out.println(sql);
+		//System.out.println(sql);
 		ResultSet rs = statement.executeQuery(sql);
 		if(rs.next())
 		{
