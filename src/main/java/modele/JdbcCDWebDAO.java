@@ -86,5 +86,6 @@ public class JdbcCDWebDAO implements CDWebDAO
 		List<Author> author = jdbc.query(sql, new AuthorDAO(),str);
 		return author;
 	}
+	
 
 }
