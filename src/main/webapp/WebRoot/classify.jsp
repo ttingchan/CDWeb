@@ -12,7 +12,21 @@
 <div class="nav"><%@include file="nav.jsp"%></div>
 
 <div class="content">
-<h1>content</h1>
+<form method="get" action="searchresult">
+<table align="center" style="font-family:Times">
+<tr>
+<td>album:
+</td>
+</tr>
+<tr>
+<td>year:
+</td>
+</tr>
+<tr>
+<td>author:</td>
+</tr>
+</table>
+</form>
 </div>
 <div class="bot"><%@include file="bot.jsp"%>
 </div>>
