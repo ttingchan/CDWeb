@@ -14,12 +14,12 @@
 <body>
 
 <div class ="Layout">
-<div class="header" style="background:url(dec/img/cdworld1.png)" ><%@include file="header.jsp"%>
+<div class="header" style="background:url(dec/img/cdworld1.png)" ><%@include file="WebRoot/header.jsp"%>
 <!--<img src="WebRoot/dec/img/cd1.png" width="100%" height="100%"/> -->
 </div>
 <div class="nav">
 <!-- <h1>navigator</h1>-->
-<%@include file="nav.jsp"%>
+<%@include file="WebRoot/nav.jsp"%>
 </div>
 
 
@@ -59,7 +59,7 @@
 </div>
 
 <div class="bot">
-<%@include file="bot.jsp"%>
+<%@include file="WebRoot/bot.jsp"%>
 </div>
 </div>
 </body>

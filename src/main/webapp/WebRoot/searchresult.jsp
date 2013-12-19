@@ -1,6 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<c:if test="${searchResult == null}">
+<div>
+	<% 
+	String attribut = (String) request.getAttribute("noResult");
+		out.println(attribut);
+		%>
+</c:if>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -15,7 +23,7 @@
 <form method="get" action="searchresult">
 <table align="center" style="font-family:Times">
 <tr>
-<td>pic
+<td>album:
 </td>
 </tr>
 <tr>
@@ -23,8 +31,7 @@
 </td>
 </tr>
 <tr>
-<td>description:
-</td>
+<td>author:</td>
 </tr>
 </table>
 </form>
