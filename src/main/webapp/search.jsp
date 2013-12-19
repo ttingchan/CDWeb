@@ -4,24 +4,27 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>CD</title>
+<link rel="stylesheet" href="dec/css/home.css"/>
 </head>
 <body>
-
-<div >
-<form method="get" action =SearchServlet >
-	<input type="text" name="search" />
-	<input type="submit" name="submit" value="submit"/>
-</form>
-</div>
-<div>
-
-	<p>
-		<%
-		String attribut = (String) request.getAttribute("noResult");
-		out.println(attribut);
-		%>
-	</p>
+<div class ="Layout">
+	<div class="header" style="background:url(dec/img/cdworld1.png)" >
+		<%@include file="WebRoot/header.jsp"%>
+	</div>
+	<div class="nav"><%@include file="WebRoot/nav.jsp"%></div>
+	<div class="content">
+		<div >
+			<form method="get" action =SearchServlet >
+				<input type="text" name="search" />
+				<input type="submit" name="submit" value="submit"/>
+			</form>
+		</div>
+	</div>
+	<div class="bot">
+		<%@include file="WebRoot/bot.jsp"%>
+	</div>
 </div>
 </body>
 </html>
+

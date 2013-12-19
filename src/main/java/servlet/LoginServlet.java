@@ -34,11 +34,11 @@ try
 	        
           HttpSession session = request.getSession(true);	    
           session.setAttribute("currentSessionUser",user); 
-          response.sendRedirect("WebRoot/login.jsp"); //logged-in page      		
+          response.sendRedirect("login.jsp"); //logged-in page      		
      }
 	        
      else 
-          response.sendRedirect("WebRoot/login.jsp"); //error page 
+          response.sendRedirect("login.jsp"); //error page 
 } 
 		
 		
