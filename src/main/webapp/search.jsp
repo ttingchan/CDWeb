@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>CD</title>
-<link rel="stylesheet" href="dec/css/home.css"/>
+<link rel="stylesheet" href="WebRoot/dec/css/home.css"/>
 </head>
 <body>
 <div class ="Layout">
@@ -20,6 +20,7 @@
 				<input type="submit" name="submit" value="submit"/>
 			</form>
 		</div>
+		<%@include file="WebRoot/searchresult.jsp"%>
 	</div>
 	<div class="bot">
 		<%@include file="WebRoot/bot.jsp"%>

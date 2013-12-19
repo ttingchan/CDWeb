@@ -47,7 +47,7 @@ public class UserDAO implements RowMapper<User>{
 		String country=bean.getCountry();
 		String zip=bean.getZip();
 		String phonenum=bean.getPhonenum();
-		String searchQuery ="select * from users where username='"
+		String searchQuery ="select * from user where username='"
                 + username
                 + "' AND password='"
                 + password

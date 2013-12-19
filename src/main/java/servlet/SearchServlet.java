@@ -1,6 +1,7 @@
 package servlet;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -18,16 +19,23 @@ public class SearchServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
 	{
 		String search = request.getParameter("search");
-		JdbcCDWebDAO searchRe = new JdbcCDWebDAO();
-		List<Album> albumSearch = searchRe.getSearchAlbumByString(search);
-		List<Song> songSearch = searchRe.getSearchSongByString(search);
-		List<Author> authorSearch = searchRe.getSearchAuthorByString(search);
+		AlbumDAO searchRe = new AlbumDAO();
+		List<Album> albumSearch = null;
+		try {
+			albumSearch = searchRe.getSearchAlbumByString(search);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	//	List<Song> songSearch = searchRe.getSearchSongByString(search);
+	//	List<Author> authorSearch = searchRe.getSearchAuthorByString(search);
 		HttpSession session = request.getSession();
-		if(albumSearch == null && songSearch == null && authorSearch == null)
+		if(albumSearch == null /*&& songSearch == null && authorSearch == null*/)
 		{
 			String message = "Sorry, there is no result for your search";
 			request.setAttribute("noResult", message);
-			this.getServletContext().getRequestDispatcher("WebRoot/search.jsp").forward(request, response);
+			request.setAttribute("searchResult", albumSearch);
+			this.getServletContext().getRequestDispatcher("/search.jsp").forward(request, response);
 		}
 		else
 		{

@@ -1,8 +1,10 @@
+
+<c:if test="${searchResult == null}">
 <div>
-	<p>
-		<%
-		String attribut = (String) request.getAttribute("noResult");
+	<% 
+	String attribut = (String) request.getAttribute("noResult");
 		out.println(attribut);
 		%>
-	</p>
 </div>
+	
+</c:if>
