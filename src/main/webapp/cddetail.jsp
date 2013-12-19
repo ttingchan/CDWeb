@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class ="Layout">
-<div class="header" style="background:url(dec/img/cdworld1.png)" ><%@include file="WebRoot/header.jsp"%>
+<div class="header" style="background:url(WebRoot/dec/img/cdworld1.png)" ><%@include file="WebRoot/header.jsp"%>
 <!--<img src="WebRoot/dec/img/cd1.png" width="100%" height="100%"/> -->
 
 </div>
@@ -24,15 +24,21 @@
 <form method="get" action="searchresult">
 <table align="center" style="font-family:Times">
 <tr>
-<td>pic1
+<td>pic
 </td>
-<td>pic2</td>
 </tr>
 <tr>
-<td>year:
-</td>
+<td>year:</td>
 </tr>
-
+<tr>
+<td>author:</td>
+</tr>
+<tr>
+<td>description:</td>
+</tr>
+<tr><th>Song:</th>
+</tr>
+<tr><td>1.song1</td></tr>
 </table>
 </form>
 </div>
