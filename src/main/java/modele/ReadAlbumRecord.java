@@ -28,7 +28,9 @@ public class ReadAlbumRecord
 		int sheetNum = wb.getNumberOfSheets();
 		Connection currentCon = ConnectionManager.getConnection();
 	    Statement statement= (Statement) currentCon.createStatement();
-	    String sql = "INSERT INTO TABLE Album";
+	    String sql1 ="INSERT INTO author(name) value(?)";
+	    String sql2 = "SELECT id FROM ";
+	    String sql = "INSERT INTO album (name, issuing_date, price,type,author_id) VALUES() ";
 		for(int i =0;i< sheetNum; i++)
 		{
 			Sheet childSheet = wb.getSheetAt(i);
