@@ -9,40 +9,27 @@
 		out.println(attribut);
 		%>
 </c:if>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>CD</title>
-<link rel="stylesheet" href="dec/css/home.css"/>
-</head>
-<body>
-<div class ="Layout">
-<div class="header" style="background:url(dec/img/cdworld1.png)" ><%@include file="header.jsp"%></div>
-<div class="nav"><%@include file="nav.jsp"%></div>
+
 <div class="content">
 <form method="get" action="searchresult">
 <table align="center" style="font-family:Times">
 <tr>
-<td>album:
-</td>
+<td><strong>album:</strong></td><td>dff</td>
+
 </tr>
 <tr>
-<td>type:
-</td>
+<td><strong>type:</strong></td><td>Pop</td>
+
 </tr>
 <tr>
-<td>year:
-</td>
+<td><strong>year:</strong></td><td>2010</td>
+
 </tr>
 <tr>
-<td>author:</td>
+<td><strong>author:</strong></td><td>yves</td>
 </tr>
 </table>
 </form>
 </div>
-<div class="bot">
-<%@include file="bot.jsp"%>
-</div>
-</div>
-</body>
-</html>
+
+

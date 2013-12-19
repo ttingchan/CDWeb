@@ -21,23 +21,24 @@
 
 
 <div class="content">
-<form method="get" action="searchresult">
-<table align="center" style="font-family:Times">
+
+<!-- <table align="center" style="font-family:Times">
 <tr>
-<td>pic1
-</td>
-<td>pic2</td>
+<td><img src="dec/img/cd2.jpg"></td>
+<td><img src="dec/img/cd2.jpg"></td>
+</tr>
+<tr><td>type</td>
 </tr>
 <tr>
-<td>year:</td>
-<td>year:</td>
+<td>year:</td><td></td>
+<td>year:</td><td></td>
 </tr>
 <tr>
-<td>author:</td>
-<td>author:</td>
+<td>author:</td><td></td>
+<td>author:</td><td></td>
 </tr>
-</table>
-</form>
+</table>   -->
+
 </div>
 
 <div class="bot">
