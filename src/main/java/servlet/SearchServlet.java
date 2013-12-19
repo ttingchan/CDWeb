@@ -21,11 +21,14 @@ public class SearchServlet extends HttpServlet {
 		String search = request.getParameter("search");
 		AlbumDAO searchRe = new AlbumDAO();
 		SongDAO songRe = new SongDAO();
+		AuthorDAO authorRe = new AuthorDAO();
 		List<Song> songSearch = null;
 		List<Album> albumSearch = null;
+		List<Author> authorSearch = null;
 		try {
 			albumSearch = searchRe.getSearchAlbumByString(search);
 			songSearch = songRe.getSearchSongByString(search);
+			authorSearch = authorRe.getSearchAuthorByString(search);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -33,18 +36,21 @@ public class SearchServlet extends HttpServlet {
 	//	List<Song> songSearch = searchRe.getSearchSongByString(search);
 	//	List<Author> authorSearch = searchRe.getSearchAuthorByString(search);
 		HttpSession session = request.getSession();
-		if(albumSearch == null && songSearch == null /*&& authorSearch == null*/)
+		if(albumSearch == null && songSearch == null && authorSearch == null)
 		{
 			String message = "Sorry, there is no result for your search";
-			request.setAttribute("noResult", message);
-			request.setAttribute("searchResult", albumSearch);
-			this.getServletContext().getRequestDispatcher("/search.jsp").forward(request, response);
+			request.setAttribute("noResult", message);			
 		}
 		else
 		{
-			
+			if(albumSearch != null)
+				request.setAttribute("albumResult", albumSearch);
+			if(songSearch != null)
+				request.setAttribute("songResult", songSearch);
+			if(authorSearch != null)
+				request.setAttribute("authorResult", authorSearch);
 		}
-		
+		this.getServletContext().getRequestDispatcher("/search.jsp").forward(request, response);		
 	}
 
 
