@@ -61,24 +61,11 @@ form
 </head>
 <body background="dec/img/background.jpg">
 <div class ="Layout">
-<div class ="header">
-<div class="top">
-<!--  <img src ="dec/img/cd.jpg" alt ="logopicture">-->
-<!--<h1>logo and slogan</h1>-->
-</div>
-<div class="login">
-<!--<h5>username:</h5>
-<h5>password:</h5>
-<h4>forgot? register</h4>-->
-<form action="/example/html/form_action.asp" method="get">
-  <p>username: <input type="text" name="fname" /></p>
-  <p>password: <input type="text" name="lname" /></p>
-  <input type="submit" value="login" />&nbsp&nbsp&nbsp<a href = "">forgot?</a>&nbsp&nbsp<a href = "register.html"> register</a>
-</form>
-</div>
+<div class ="header" style="background:url(dec/img/cdworld1.png)"><%@include file="header.jsp"%>
+
 </div>
 <div class="nav">
-
+<%@include file="nav.jsp"%>
 </div>
 
 <div class="content">
@@ -113,7 +100,7 @@ form
 </div>
 
 <div class="bot">
-<h1>bottom</h1>
+<%@include file="bot.jsp"%>
 </div>
 </div>
 </body>

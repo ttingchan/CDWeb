@@ -57,6 +57,11 @@ public class AlbumDAO implements RowMapper<Album>
 		return albums;
 	}
 	
+	public void insertNewAlbum()
+	{
+		
+	}
+	
 	
 	
 	//List<Album> 

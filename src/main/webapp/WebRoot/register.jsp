@@ -37,7 +37,6 @@
 <%@include file="nav.jsp"%>
 </div>
 <div class="content">
-
             <fieldset>
                 <legend align="center" style="font-family:Times"><strong>Register</strong></legend>
             <br/>
