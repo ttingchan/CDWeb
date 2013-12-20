@@ -27,7 +27,7 @@
 <th>Author</th><th>Album</th>
 </tr>
 <tr>
-	<td align="center"><a href="AlbumServlet?cd='1st Amendment'">1st Amendment</a></td>
+	<td align="center"><a href="AlbumServlet?showCD='1st Amendment'">1st Amendment</a></td>
 	<td align="center">album</td>
 </tr>
 

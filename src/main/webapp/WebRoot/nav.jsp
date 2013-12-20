@@ -31,8 +31,7 @@
                                 </li>-->
 
                                 
-                              <li><a href = "./search.jsp">SEARCH</a>
-                                    
+                              <li><a href = "./search.jsp">SEARCH</a>                                  
                                 </li>   
                         </ul>
 						<!--  <div class="searchBar">-->

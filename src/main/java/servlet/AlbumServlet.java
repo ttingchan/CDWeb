@@ -28,7 +28,8 @@ public class AlbumServlet extends HttpServlet
 		}
 		if(album != null)
 		{
-			request.setAttribute("CDdetail", album);
+			request.getSession().setAttribute("CDdetail", album);
+			//request.setAttribute("CDdetail", album);
 			response.sendRedirect("cddetail.jsp?cd="+album.getName()+"");
 		}
 //		String path = sc.getServletNames()request;

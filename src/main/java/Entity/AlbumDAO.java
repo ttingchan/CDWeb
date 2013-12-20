@@ -57,6 +57,11 @@ public class AlbumDAO implements RowMapper<Album>
 		return albums;
 	}
 	
+	public List<Album> getAllAlbum()
+	{
+		return null;
+		
+	}
 	public Album getAlbumContent(String str) throws SQLException
 	{
 		Connection currentCon = ConnectionManager.getConnection();

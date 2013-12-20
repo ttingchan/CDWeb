@@ -55,47 +55,47 @@ public class Album implements Serializable{
 		return this.name;
 	}
 	
-	void setName(String name)
+	public void setName(String name)
 	{
 		this.name = name;
 	}
-	String getIssuingDate()
+	public String getIssuingDate()
 	{
 		return this.issuing_date;
 	}
 	
-	void setIssuingDate(String date)
+	public void setIssuingDate(String date)
 	{
 		this.issuing_date = date;
 	}
 	
-	int getPrice()
+	public int getPrice()
 	{
 		return this.price;
 	}
 	
-	void setPrice(int price)
+	public void setPrice(int price)
 	{
 		this.price = price;
 	}
 	
 
-	String getDescription()
+	public String getDescription()
 	{
 		return this.description;
 	}
 	
-	void setDescription(String des)
+	public void setDescription(String des)
 	{
 		this.description = des;
 	}
 	
-	Integer getAuthorId()
+	public Integer getAuthorId()
 	{
 		return this.author_id;
 	}
 	
-	void setAuthorId(Integer author_id)
+	public void setAuthorId(Integer author_id)
 	{
 		this.author_id = author_id;
 	}

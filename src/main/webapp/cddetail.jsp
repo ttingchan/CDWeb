@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ page import="Entity.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -27,12 +28,14 @@
 <td><img src="WebRoot/dec/img/cd1.jpg" width="100%">
 </td>
 <td width="300" style="word-wrap: break-word; word-break : break-all;">description....................................................................................................................................................................11111111111111111111111111111111111</td>
-
+<%
+	Album album = (Album) session.getAttribute("CDdetail");
+%>
 </tr>
-<tr><td><strong>year:</strong></td><td>2011</td>
+<tr><td><strong></strong></td><td><%=album.getIssuingDate() %></td>
 </tr>
 <tr>
-<td><strong>author:</strong></td><td>bla</td>
+<td><strong>author:</strong></td><td><% %></td>
 </tr>
 
 
