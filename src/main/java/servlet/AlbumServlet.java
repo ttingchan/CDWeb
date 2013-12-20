@@ -10,7 +10,7 @@ public class AlbumServlet extends HttpServlet
 	
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 	{
-		String str = request.getParameter("search");
+		String str = request.getParameter("showCD");
 		ServletContext sc = getServletContext();
 //		String path = sc.getServletNames()request;
 		
