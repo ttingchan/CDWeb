@@ -40,7 +40,7 @@
             <fieldset>
                 <legend align="center" style="font-family:Times"><strong>Register</strong></legend>
             <br/>
-           <form method="post" action=InscriptionServlet name="RegisterForm" >
+           <form method="get" action=InscriptionServlet name="RegisterForm" >
                <table align="center">
                    <tr>
                        <td style="font-family:Times"><strong><font color="red">*</font>Username:</strong></td>

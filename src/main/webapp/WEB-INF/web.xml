@@ -15,6 +15,11 @@
     </servlet>
     
     <servlet>
+    <servlet-name>InscriptionServlet</servlet-name>
+    <servlet-class>servlet.InscriptionServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
     <servlet-name>AlbumServlet</servlet-name>
     <servlet-class>servlet.AlbumServlet</servlet-class>
     </servlet>
@@ -24,9 +29,14 @@
     <url-pattern>/LoginServlet</url-pattern>
   </servlet-mapping>
   
-    <servlet-mapping>
+  <servlet-mapping>
     <servlet-name>SearchServlet</servlet-name>
     <url-pattern>/SearchServlet</url-pattern>
+  </servlet-mapping>
+  
+ <servlet-mapping>
+    <servlet-name>InscriptionServlet</servlet-name>
+    <url-pattern>/InscriptionServlet</url-pattern>
   </servlet-mapping>
   
   <servlet-mapping>

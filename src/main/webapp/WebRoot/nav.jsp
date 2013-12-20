@@ -7,7 +7,7 @@
                                 <li><a href = "./index.jsp"><strong>INDEX</strong></a>
                                     
                                 </li> 
-                                <li><a href = "cdlist.jsp"><strong>CD<strong></a>
+                                <li><a href = "cdlist.jsp?cdlist"><strong>CD<strong></a>
                                         <!--  <ul>
                                         <li><a href = "./WebRoot/pop1.jsp">Blue</a></li>
                                         <li><a href = "./event.php?action=concert">Concert</a></li>
