@@ -3,13 +3,13 @@
 <html>
 <head><meta charset="utf-8" />
 <title>CD</title>
-<link rel="stylesheet" href="dec/css/home.css"/>
+<link rel="stylesheet" href="WebRoot/dec/css/home.css"/>
 <script type="text/javascript" src="js/register.js" ></script>  
 <script type="text/javascript" src="js/verification.js" ></script>
 <style type="text/css">
         .code
         {
-            background-image:url(dec/imgs/yanzheng1.jpg);
+            background-image:url(WebRoot/dec/imgs/yanzheng1.jpg);
             font-family:Arial;
             font-style:italic;
             color:Red;
@@ -26,15 +26,15 @@
     
 </style>
 </head>
-<body background="dec/img/background.jpg">
+<body background="WebRoot/dec/img/background.jpg">
 <div class ="Layout">
-<div class="header" style="background:url(dec/img/cdworld1.png)" ><%@include file="header.jsp"%>
+<div class="header" style="background:url(WebRoot/dec/img/cdworld1.png)" ><%@include file="WebRoot/header.jsp"%>
 <!--<img src="WebRoot/dec/img/cd1.png" width="100%" height="100%"/> -->
 
 </div>
 <div class="nav">
 <!-- <h1>navigator</h1>-->
-<%@include file="nav.jsp"%>
+<%@include file="WebRoot/nav.jsp"%>
 </div>
 <div class="content">
             <fieldset>
@@ -156,7 +156,7 @@
 </div>
 
 <div class="bot">
-<%@include file="bot.jsp"%>
+<%@include file="WebRoot/bot.jsp"%>
 </div>
 </div>
 </body>

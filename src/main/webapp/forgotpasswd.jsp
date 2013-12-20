@@ -3,7 +3,7 @@
 <html>
 <head><meta charset="utf-8" />
 <title>CD</title>
-<link rel="stylesheet" href="dec/css/home.css"/>
+<link rel="stylesheet" href="WebRoot/dec/css/home.css"/>
 <style type="text/css">
 fieldset
 {
@@ -62,11 +62,11 @@ form
 </head>
 <body background="dec/img/background.jpg">
 <div class ="Layout">
-<div class ="header" style="background:url(dec/img/cdworld1.png)"><%@include file="header.jsp"%>
+<div class ="header" style="background:url(WebRoot/dec/img/cdworld1.png)"><%@include file="WebRoot/header.jsp"%>
 
 </div>
 <div class="nav">
-<%@include file="nav.jsp"%>
+<%@include file="WebRoot/nav.jsp"%>
 </div>
 
 <div class="content">
@@ -101,7 +101,7 @@ form
 </div>
 
 <div class="bot">
-<%@include file="bot.jsp"%>
+<%@include file="WebRoot/bot.jsp"%>
 </div>
 </div>
 </body>

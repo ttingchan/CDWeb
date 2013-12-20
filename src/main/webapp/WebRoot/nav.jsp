@@ -19,7 +19,7 @@
                                         </ul>-->
                                 </li>
 
-                                <li><a href = "WebRoot/register.jsp"><strong>REGISTER</strong></a>
+                                <li><a href = "register.jsp"><strong>REGISTER</strong></a>
                                         <!--<ul>
                                         <li><a href = "./event.php?action=sport">Sport</a></li>
                                         <li><a href = "./event.php?action=jeuxvideo">Jeux Video</a></li>

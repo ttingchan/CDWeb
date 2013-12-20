@@ -15,7 +15,7 @@
 <form action="/example/html/form_action.asp" method="get">
   <p style="text-align:left;font-family:Times;color:white">USERNAME: <input type="text" name="fname" /></p>
   <p style="text-align:left;font-family:Times;color:white">PASSWORD: <input type="text" name="lname" /></p>
-  <input type="submit" value="LOGIN" style="font-family:Times"/>&nbsp&nbsp&nbsp<a href = "WebRoot/forgotpasswd.jsp" style="font-family:Times">FORGOT?</a>&nbsp&nbsp<a href = "WebRoot/register.jsp" style="font-family:Times"> REGISTER</a>
+  <input type="submit" value="LOGIN" style="font-family:Times"/>&nbsp&nbsp&nbsp<a href = "forgotpasswd.jsp" style="font-family:Times">FORGOT?</a>&nbsp&nbsp<a href = "register.jsp" style="font-family:Times"> REGISTER</a>
 </form>
 </div>
 
