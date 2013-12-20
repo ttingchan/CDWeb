@@ -12,14 +12,7 @@ import javax.persistence.Table;
 import org.hibernate.annotations.Entity;
 
 
-@Entity
-@Table(name="user")
 public class User {
-
-	@OneToMany(mappedBy="userId")
-	private List<Comment> comments;
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String nickname;
 	private String psw;
