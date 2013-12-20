@@ -21,12 +21,12 @@
 
 
 <div class="content">
-
+</br></br></br>
 <form method="post" action="searchevent.php?action=keySearch" align="center">
                         <input type="text" class="searchtext"/>&nbsp&nbsp
-                        <input type="submit" value="search CD" class="searchbutton1" style="font-size:40px;font-family:Times"/>   
+                        <input type="submit" value="search CD" class="searchbutton1" style="font-size:30px;font-family:Times"/>   
                         
-                    </form>
+                    </form></br></br></br>
                     <h2 align="center">You can search by author, type, song and album</h2>
 </div>
 

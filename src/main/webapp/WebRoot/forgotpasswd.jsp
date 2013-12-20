@@ -8,20 +8,21 @@
 fieldset
 {
     text-align: center;
-    width: 800px;
+    width: 900px;
     margin-left: 5%;
     margin-top: 30px;
     border-width: 1px;
 }
 table{
     border-collapse: collapse;
+    align:center;
 }
 tr{
-    width: 800px;
+    width: 900px;
 }
 td
 {
-    width:230px;
+    width:400px;
     height:30px;
 }
 select
@@ -40,7 +41,7 @@ h2
 
 .td2
 {
-    text-align: center;
+    text-align: left;
 }
 
 .td3
@@ -51,7 +52,7 @@ h2
 form
 {
    margin-top:10px;
-   text-align:right;
+   text-align:left;
    padding-right:10%;
    margin-bottom: 20px;
    
@@ -74,10 +75,10 @@ form
             <br/>
         <tr>
 		<form action="?action=submit" method="post" text-align="center">
-            <td><span>input the username:</span>
+            <td><span>username:</span>
             <input type="text" class="username" name="username"/>
             </td>
-			<td><span>input the email address:</span>
+			<td><span>email address:</span>
             <input type="text" class="email" name="email"/>
             <input type="submit" name="action" value="submit"/>
         </td>

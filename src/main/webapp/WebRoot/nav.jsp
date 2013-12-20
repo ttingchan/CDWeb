@@ -5,18 +5,18 @@
 <ul>
                                 
                                 <li><a href = "cdlist.jsp"><strong>CD<strong></a>
-                                        <ul>
+                                        <!--  <ul>
                                         <li><a href = "./WebRoot/pop1.jsp">Blue</a></li>
                                         <li><a href = "./event.php?action=concert">Concert</a></li>
                                         <li><a href = "./event.php?action=soiree">jazz</a>
-                                        </ul>
+                                        </ul>-->
                                 </li>
                                 <li><a href = "cdlist.jsp"><strong>AUTHOR</strong></a>
-                                        <ul>
+                                        <!--  <ul>
                                         <li><a href = "./event.php?action=expositions">Male</a></li>
                                         <li><a href = "./event.php?action=musee">Female</a></li>
                                         <li><a href = "./event.php?action=theatre">Band</a>
-                                        </ul>
+                                        </ul>-->
                                 </li>
 
                                 <li><a href = "WebRoot/register.jsp"><strong>REGISTER</strong></a>
