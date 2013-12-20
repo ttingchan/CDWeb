@@ -6,15 +6,17 @@ height:105%;
 .Layout{
  width:100%;
  height:105%;
+ background:#444444;
 }
 body
 {   margin-left:5%;
     margin-right:5%;
     height:105%;
 	background-repeat:no-repeat;
-	-moz-background-size:40% 100%;
-	background-size:90% 98%;
+	
+	
 	background-position:center;
+	
 }
 .header{
 width:100%;
@@ -126,7 +128,7 @@ color:#000;
 border-width:0px 0px 0 0;
 background:#666666; 
 line-height:50px; 
-font-size:11px;
+font-size:20px;
 }
 
 .nav ul li ul {
@@ -173,6 +175,7 @@ color:#000000;
 {
     width: 500px;
     height: 100px;
+    line-height:100px;
     margin-top: 15px;
     margin-bottom: 5px;
     margin-left: 5%;
@@ -182,7 +185,8 @@ color:#000000;
 .searchbutton1/*, .searchbutton2*/
 {
     width: 250px;
-    height: 100px;
+    height: 90px;
+    line-height:70px;
     /*margin-left: 30%;
     margin-bottom: 10px;
     margin-top: 8px;*/

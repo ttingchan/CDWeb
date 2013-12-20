@@ -4,14 +4,14 @@
 <link rel="stylesheet" type="text/css" href="dec/css/home.css"/>
 <ul>
                                 
-                                <li><a href = "./event.php?action=musique"  >CD</a>
+                                <li><a href = "cdlist.jsp"><strong>CD<strong></a>
                                         <ul>
                                         <li><a href = "./WebRoot/pop1.jsp">Blue</a></li>
                                         <li><a href = "./event.php?action=concert">Concert</a></li>
                                         <li><a href = "./event.php?action=soiree">jazz</a>
                                         </ul>
                                 </li>
-                                <li><a href = "./event.php?action=art">AUTHOR</a>
+                                <li><a href = "cdlist.jsp"><strong>AUTHOR</strong></a>
                                         <ul>
                                         <li><a href = "./event.php?action=expositions">Male</a></li>
                                         <li><a href = "./event.php?action=musee">Female</a></li>
@@ -19,7 +19,7 @@
                                         </ul>
                                 </li>
 
-                                <li><a href = "WebRoot/register.jsp">REGISTER</a>
+                                <li><a href = "WebRoot/register.jsp"><strong>REGISTER</strong></a>
                                         <!--<ul>
                                         <li><a href = "./event.php?action=sport">Sport</a></li>
                                         <li><a href = "./event.php?action=jeuxvideo">Jeux Video</a></li>
@@ -27,7 +27,7 @@
                                         </ul>
                                 </li>-->
 
-                                <li><a href = "./index.jsp">INDEX</a>
+                                <li><a href = "./index.jsp"><strong>INDEX</strong></a>
                                     
                                 </li> 
                               <li><a href = "./search.jsp">SEARCH</a>

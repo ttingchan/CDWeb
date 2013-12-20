@@ -6,7 +6,7 @@
 <title>CD</title>
 <link rel="stylesheet" type="text/css" href="WebRoot/dec/css/home.css"/>
 </head>
-<body ><!-- background="WebRoot/dec/img/background.jpg" -->
+<body><!-- background="WebRoot/dec/img/background.jpg" -->
 
 <div class ="Layout">
 <div class="header" style="background:url(WebRoot/dec/img/cdworld1.png)" ><%@include file="WebRoot/header.jsp"%>
@@ -24,9 +24,10 @@
 
 <form method="post" action="searchevent.php?action=keySearch" align="center">
                         <input type="text" class="searchtext"/>&nbsp&nbsp
-                        <input type="submit" value="search CD" class="searchbutton1"/>   
+                        <input type="submit" value="search CD" class="searchbutton1" style="font-size:40px;font-family:Times"/>   
                         
                     </form>
+                    <h2 align="center">You can search by author, type, song and album</h2>
 </div>
 
 <div class="bot">

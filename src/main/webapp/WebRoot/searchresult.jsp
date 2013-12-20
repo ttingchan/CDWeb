@@ -14,7 +14,7 @@
 <table align="center" style="font-family:Times" width="300px" height="100px">
 <h3 align="center">Author</h3>
 <tr>
-<th>Author</strong></th><th>Album</th>
+<th>Author</th><th>Album</th>
 </tr>
 <tr><td align="center">Yves</td><td align="center">album</td></tr>
 
