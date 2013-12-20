@@ -24,18 +24,18 @@
 <form method="get" action="searchresult">
 <table align="center" style="font-family:Times">
 <tr>
-<td><img src="WebRoot/dec/img/cd1.jpg">
+<td><img src="WebRoot/dec/img/cd1.jpg" width="100%">
 </td>
+<td width="300" style="word-wrap: break-word; word-break : break-all;">description....................................................................................................................................................................11111111111111111111111111111111111</td>
+
 </tr>
-<tr>
-<td><strong>year:</strong></td><td>2011</td>
+<tr><td><strong>year:</strong></td><td>2011</td>
 </tr>
 <tr>
 <td><strong>author:</strong></td><td>bla</td>
 </tr>
-<tr>
-<td><strong>description:</strong></td><td width="300" style="word-wrap: break-word; word-break : break-all;">....................................................................................................................................................................11111111111111111111111111111111111</td>
-</tr>
+
+
 <tr><td><strong>Song:</strong></td><td>1.song1</td>
 </tr>
 </table>

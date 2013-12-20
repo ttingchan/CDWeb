@@ -22,23 +22,11 @@
 
 <div class="content">
 
-<!-- <table align="center" style="font-family:Times">
-<tr>
-<td><img src="dec/img/cd2.jpg"></td>
-<td><img src="dec/img/cd2.jpg"></td>
-</tr>
-<tr><td>type</td>
-</tr>
-<tr>
-<td>year:</td><td></td>
-<td>year:</td><td></td>
-</tr>
-<tr>
-<td>author:</td><td></td>
-<td>author:</td><td></td>
-</tr>
-</table>   -->
-
+<form method="post" action="searchevent.php?action=keySearch" align="center">
+                        <input type="text" class="searchtext"/>&nbsp&nbsp
+                        <input type="submit" value="search CD" class="searchbutton1"/>   
+                        
+                    </form>
 </div>
 
 <div class="bot">

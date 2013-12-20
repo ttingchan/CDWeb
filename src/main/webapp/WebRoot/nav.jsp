@@ -25,22 +25,16 @@
                                         <li><a href = "./event.php?action=jeuxvideo">Jeux Video</a></li>
                                         <li><a href = "./event.php?action=salon">Salon</a></li>
                                         </ul>
-                                </li>
+                                </li>-->
 
-                                <li><a href = "./event.php?action=cinema">holiday</a>
-                                    <ul>
-                                        <li><a href = "./event.php?action=projection">Projection</a></li>
-                                        <li><a href = "./event.php?action=debat">Debat</a></li>
-                                        <li><a href = "./event.php?action=sortie">Sortie</a></li>
-                                        </ul>
-                                </li> -->
-                                
+                                <li><a href = "./index.jsp">INDEX</a>
+                                    
+                                </li> 
+                              <li><a href = "./search.jsp">SEARCH</a>
+                                    
+                                </li>   
                         </ul>
-						<div class="searchBar">
-                    <form method="post" action="searchevent.php?action=keySearch">
-                        <input type="text" class="searchtext"/>&nbsp&nbsp
-                        <input type="submit" value="search CD" class="searchbutton1"/>   
-                        
-                    </form>
+						<!--  <div class="searchBar">-->
+                    
                        <!-- <input type="button" value="for more detail" onclick="self.location.href='searchevent.php';" class="searchbutton2"/>-->
-                    </div>
+                    

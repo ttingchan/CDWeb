@@ -9,18 +9,18 @@
 </head>
 <body>
 <div class ="Layout">
-	<div class="header" style="background:url(dec/img/cdworld1.png)" >
+	<div class="header" style="background:url(WebRoot/dec/img/cdworld1.png)" >
 		<%@include file="WebRoot/header.jsp"%>
 	</div>
 	<div class="nav"><%@include file="WebRoot/nav.jsp"%></div>
 	<div class="content">
-		<div >
+		<div>
 			<form method="get" action =SearchServlet >
 				<input type="text" name="search" />
 				<input type="submit" name="submit" value="submit"/>
 			</form>
 		</div>
-		<%@include file="WebRoot/searchresult.jsp"%>
+		  <%@include file="WebRoot/searchresult.jsp"%>
 	</div>
 	<div class="bot">
 		<%@include file="WebRoot/bot.jsp"%>

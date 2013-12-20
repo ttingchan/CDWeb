@@ -11,14 +11,33 @@
 </c:if>
 
 <div class="content">
-<table align="center" style="font-family:Times">
+<table align="center" style="font-family:Times" width="300px" height="100px">
+<h3 align="center">Author</h3>
+<tr>
+<th>Author</strong></th><th>Album</th>
+</tr>
+<tr><td align="center">Yves</td><td align="center">album</td></tr>
+
+
+</table>
+<h3 align="center">Album</h3>
+<table align="center" style="font-family:Times" width="300px" height="100px">
 
 <tr>
-<td><strong>album:</strong></td><td>dff</td>
-<td><strong>type:</strong></td><td>Pop</td>
-<td><strong>year:</strong></td><td>2010</td>
-<td><strong>author:</strong></td><td>yves</td>
+<th>Album</strong></th><th>Price</th><th>Type</th>
 </tr>
+<tr><td align="center">album</td><td align="center">price</td><td align="center">Pop</td></tr>
+
+
+</table>
+<h3 align="center">Song</h3>
+<table align="center" style="font-family:Times" width="300px" height="100px">
+
+<tr>
+<th>Song</strong></th><th>Album</th>
+</tr>
+<tr><td align="center">twinkle</td><td align="center">album</td></tr>
+
 
 </table>
 </div>

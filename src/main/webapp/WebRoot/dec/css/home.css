@@ -119,7 +119,7 @@ z-index:1;
 display:block; 
 text-align:center; 
 text-decoration:none; 
-width:200px; 
+width:242.5px; 
 height:60px; 
 color:#000; 
 /*border:1px solid #fff;*/
@@ -171,8 +171,8 @@ color:#000000;
 
 .searchtext
 {
-    width: 300px;
-    height: 30px;
+    width: 500px;
+    height: 100px;
     margin-top: 15px;
     margin-bottom: 5px;
     margin-left: 5%;
@@ -181,8 +181,8 @@ color:#000000;
 
 .searchbutton1/*, .searchbutton2*/
 {
-    width: 150px;
-    height: 30px;
+    width: 250px;
+    height: 100px;
     /*margin-left: 30%;
     margin-bottom: 10px;
     margin-top: 8px;*/
