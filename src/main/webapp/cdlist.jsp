@@ -26,7 +26,9 @@
 <tr>
 <th>Author</th><th>Album</th>
 </tr>
-<tr><td align="center">Yves</td><td align="center">album</td></tr>
+<tr>
+	<td align="center">Yves</td><td align="center">album</td>
+</tr>
 
 
 </table>
