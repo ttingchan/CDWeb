@@ -26,7 +26,7 @@ public class Album implements Serializable{
 	private int price;
 	private  String description;
 	private Integer author_id;
-	Album()
+	public Album()
 	{
 		
 	}
@@ -40,17 +40,17 @@ public class Album implements Serializable{
 		this.author_id = author_id;
 	}
 	
-	Integer getId()
+	public Integer getId()
 	{
 		return this.id;
 	}
 	
-	void setId(Integer id)
+	public void setId(Integer id)
 	{
 		this.id = id;
 	}
 	
-	String getName()
+	public String getName()
 	{
 		return this.name;
 	}

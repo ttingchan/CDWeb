@@ -74,8 +74,7 @@ public class AlbumDAO implements RowMapper<Album>
 			album.setPrice(rs.getInt("price"));
 			album.setAuthorId(rs.getInt("id_author"));
 	    }
-		return album;
-		
+		return album;		
 	}
 	
 	
