@@ -28,6 +28,7 @@
                         
                     </form></br></br></br>
                     <h2 align="center">You can search by author, type, song and album</h2>
+					<h2 align="center"><a href="login.jsp">LOGIN NOW</a></h2>
 </div>
 
 <div class="bot">
