@@ -36,7 +36,7 @@
                 <tr>
                     <td>
                        <h3 style="font-family:Times">LOGIN</h3>
-                    <form method="post" action="php/login.php" >
+                    <form method="get" action=LoginServlet >
                         <p style="font-family:Times">USERNAME:<input type="text" name="loginname" class="loginname" style="font-family:Times"/></p>
                         
                         <p style="font-family:Times">PASSWORD:<input type="password" name="password" class="password" style="font-family:Times"/></p>

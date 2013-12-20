@@ -36,8 +36,7 @@ public class AlbumDAO implements RowMapper<Album>
 
 	public List<Album> getSearchAlbumByString(String str) throws SQLException {
 		// TODO Auto-generated method stub
-		List<Album> albums = new ArrayList<Album>();
-		
+		List<Album> albums = new ArrayList<Album>();		
 		Connection currentCon = ConnectionManager.getConnection();
 	    Statement statement= (Statement) currentCon.createStatement();
 		String sql = "SELECT * FROM album WHERE name LIKE '%"+str+"%'";
@@ -59,9 +58,28 @@ public class AlbumDAO implements RowMapper<Album>
 		return albums;
 	}
 	
-	public List<Album> getAllAlbum()
+	public List<Album> getAllAlbum() throws SQLException
 	{
-		return null;
+		List<Album> albums = new ArrayList<Album>();		
+		Connection currentCon = ConnectionManager.getConnection();
+	    Statement statement= (Statement) currentCon.createStatement();
+		String sql = "SELECT * FROM album";
+		System.out.println(sql);
+		ResultSet rs = statement.executeQuery(sql);
+		if(rs.next())
+		{
+			Album album= new Album();
+			album.setId(rs.getInt("id"));
+			album.setName(rs.getString("name"));
+			album.setIssuingDate(rs.getString("issuing_date"));
+			album.setDescription(rs.getString("description"));
+			album.setPrice(rs.getInt("price"));
+			album.setAuthorId(rs.getInt("id_author"));
+			album.setImgURL(rs.getString("img_url"));
+			albums.add(album);
+		}
+		
+		return albums;
 		
 	}
 	public Album getAlbumContent(String str) throws SQLException

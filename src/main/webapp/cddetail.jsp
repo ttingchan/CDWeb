@@ -33,12 +33,12 @@
 	<td>
 		<table>
 			<tr>
-				<td><strong></strong></td>
+				<td><strong>Date:</strong></td>
 				<td><%=album.getIssuingDate() %></td>
 			</tr>
 			
 			<tr>
-				<td><strong>author:</strong></td>
+				<td><strong>Author:</strong></td>
 				<td><% %></td>
 			</tr>
 				
