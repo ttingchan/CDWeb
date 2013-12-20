@@ -22,7 +22,7 @@
 
 <div class="content">
 </br></br></br>
-<form method="post" action="searchevent.php?action=keySearch" align="center">
+<form method="post" action=LoginServlet align="center">
                         <input type="text" class="searchtext"/>&nbsp&nbsp
                         <input type="submit" value="search CD" class="searchbutton1" style="font-size:30px;font-family:Times"/>   
                         
