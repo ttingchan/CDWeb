@@ -57,10 +57,27 @@ public class AlbumDAO implements RowMapper<Album>
 		return albums;
 	}
 	
-	public void insertNewAlbum()
+	public Album getAlbumContent(String str) throws SQLException
 	{
+		Connection currentCon = ConnectionManager.getConnection();
+	    Statement statement= (Statement) currentCon.createStatement();
+	    Album album = new Album();
+	    
+	    String sql = "SELECT * FROM album WHERE name = "+str+"";
+	    ResultSet rs = statement.executeQuery(sql);
+	    if(rs.next())
+	    {
+			album.setId(rs.getInt("id"));
+			album.setName(rs.getString("name"));
+			album.setIssuingDate(rs.getString("issuing_date"));
+			album.setDescription(rs.getString("description"));
+			album.setPrice(rs.getInt("price"));
+			album.setAuthorId(rs.getInt("id_author"));
+	    }
+		return album;
 		
 	}
+	
 	
 	
 	
