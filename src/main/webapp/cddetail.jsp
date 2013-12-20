@@ -22,27 +22,32 @@
 
 
 <div class="content">
-<form method="get" action="searchresult">
 <table align="center" style="font-family:Times">
+	<%
+		Album album = (Album) session.getAttribute("CDdetail");
+	%>
 <tr>
-<td><img src="WebRoot/dec/img/cd1.jpg" width="100%">
-</td>
-<td width="300" style="word-wrap: break-word; word-break : break-all;">description....................................................................................................................................................................11111111111111111111111111111111111</td>
-<%
-	Album album = (Album) session.getAttribute("CDdetail");
-%>
-</tr>
-<tr><td><strong></strong></td><td><%=album.getIssuingDate() %></td>
-</tr>
-<tr>
-<td><strong>author:</strong></td><td><% %></td>
+	<td>
+		<img src="WebRoot/dec/img/cd1.jpg" width="100%">
+	</td>
+	<td width="300" style="word-wrap: break-word; word-break : break-all;">
 </tr>
 
-
-<tr><td><strong>Song:</strong></td><td>1.song1</td>
+<tr>
+	<td><strong></strong></td>
+	<td><%=album.getIssuingDate() %></td>
 </tr>
-</table>
-</form>
+
+<tr>
+	<td><strong>author:</strong></td>
+	<td><% %></td>
+</tr>
+	
+<tr>
+	<td><strong>Song:</strong></td>
+	<td>1.song1</td>
+</tr>
+	</table>
 </div>
 
 <div class="bot">
