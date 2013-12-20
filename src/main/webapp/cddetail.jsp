@@ -27,25 +27,32 @@
 		Album album = (Album) session.getAttribute("CDdetail");
 	%>
 <tr>
-	<td>
-		<img src="WebRoot/dec/img/cd1.jpg" width="100%">
+	<td rowspan=6>
+		<img src=<%=album.getImgURL()%> width="100%">
 	</td>
-	<td width="300" style="word-wrap: break-word; word-break : break-all;">
-</tr>
-
-<tr>
-	<td><strong></strong></td>
-	<td><%=album.getIssuingDate() %></td>
-</tr>
-
-<tr>
-	<td><strong>author:</strong></td>
-	<td><% %></td>
-</tr>
-	
-<tr>
-	<td><strong>Song:</strong></td>
-	<td>1.song1</td>
+	<td>
+		<table>
+			<tr>
+				<td><strong></strong></td>
+				<td><%=album.getIssuingDate() %></td>
+			</tr>
+			
+			<tr>
+				<td><strong>author:</strong></td>
+				<td><% %></td>
+			</tr>
+				
+			<tr>
+				<td><strong>Song:</strong></td>
+				<td>1.song1</td>
+			</tr>
+			
+			<tr>
+				<td><strong>Description</strong></td>
+				<td><%=album.getDescription() %></td>
+			</tr>
+		</table>
+	</td>
 </tr>
 	</table>
 </div>

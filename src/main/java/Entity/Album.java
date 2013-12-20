@@ -26,11 +26,12 @@ public class Album implements Serializable{
 	private int price;
 	private  String description;
 	private Integer author_id;
+	private String img_url;
 	public Album()
 	{
 		
 	}
-	Album(Integer id, String name, String issuing_date, int price, String description,Integer authos_id)
+	Album(Integer id, String name, String issuing_date, int price, String description,Integer authos_id,String img_url)
 	{
 		this.id = id;
 		this.name = name;
@@ -38,6 +39,17 @@ public class Album implements Serializable{
 		this.price = price;
 		this.description = description;
 		this.author_id = author_id;
+		this.img_url = img_url;
+	}
+	
+	public String getImgURL()
+	{
+		return this.img_url;
+	}
+	
+	public void setImgURL(String url)
+	{
+		this.img_url = url;
 	}
 	
 	public Integer getId()

@@ -26,9 +26,10 @@ public class AlbumDAO implements RowMapper<Album>
 		album.setId(rs.getInt("id"));
 		album.setName(rs.getString("name"));
 		album.setIssuingDate(rs.getString("issuing_date"));
-		album.setDescription(rs.getNString("description"));
+		album.setDescription(rs.getString("description"));
 		album.setPrice(rs.getInt("price"));
 		album.setAuthorId(rs.getInt("id_author"));
+		album.setImgURL(rs.getString("img_url"));
 		return album;
 	}
 	
@@ -51,6 +52,7 @@ public class AlbumDAO implements RowMapper<Album>
 			album.setDescription(rs.getString("description"));
 			album.setPrice(rs.getInt("price"));
 			album.setAuthorId(rs.getInt("id_author"));
+			album.setImgURL(rs.getString("img_url"));
 			albums.add(album);
 		}
 		
@@ -78,6 +80,7 @@ public class AlbumDAO implements RowMapper<Album>
 			album.setDescription(rs.getString("description"));
 			album.setPrice(rs.getInt("price"));
 			album.setAuthorId(rs.getInt("id_author"));
+			album.setImgURL(rs.getString("img_url"));
 	    }
 		return album;		
 	}
