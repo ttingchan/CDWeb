@@ -3,6 +3,7 @@ package Entity;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.sql.DataSource;
@@ -24,10 +25,9 @@ public class AlbumDAO implements RowMapper<Album>
 		//album
 		album.setId(rs.getInt("id"));
 		album.setName(rs.getString("name"));
-		album.setIssuingDate(rs.getDate("issuing_date"));
+		album.setIssuingDate(rs.getString("issuing_date"));
 		album.setDescription(rs.getNString("description"));
 		album.setPrice(rs.getInt("price"));
-		album.setNumLike(rs.getInt("num_like"));
 		album.setAuthorId(rs.getInt("id_author"));
 		return album;
 	}
@@ -35,21 +35,21 @@ public class AlbumDAO implements RowMapper<Album>
 
 	public List<Album> getSearchAlbumByString(String str) throws SQLException {
 		// TODO Auto-generated method stub
-		List<Album> albums = null;
-		Album album= new Album();
+		List<Album> albums = new ArrayList<Album>();
+		
 		Connection currentCon = ConnectionManager.getConnection();
 	    Statement statement= (Statement) currentCon.createStatement();
 		String sql = "SELECT * FROM album WHERE name LIKE '%"+str+"%'";
-		//System.out.println(sql);
+		System.out.println(sql);
 		ResultSet rs = statement.executeQuery(sql);
 		if(rs.next())
 		{
+			Album album= new Album();
 			album.setId(rs.getInt("id"));
 			album.setName(rs.getString("name"));
-			album.setIssuingDate(rs.getDate("issuing_date"));
-			album.setDescription(rs.getNString("description"));
+			album.setIssuingDate(rs.getString("issuing_date"));
+			album.setDescription(rs.getString("description"));
 			album.setPrice(rs.getInt("price"));
-			album.setNumLike(rs.getInt("num_like"));
 			album.setAuthorId(rs.getInt("id_author"));
 			albums.add(album);
 		}

@@ -3,6 +3,7 @@ package Entity;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.jdbc.core.RowMapper;
@@ -18,29 +19,27 @@ public class SongDAO implements RowMapper<Song> {
 		song.setId(rs.getInt("id"));
 		song.setDescription(rs.getString("description"));
 		song.setName(rs.getString("name"));
-		song.setNumLke(rs.getInt("num_like"));
-		song.setType(rs.getInt("type"));
-		song.setIdAuthor(rs.getInt("id_author"));
 		return song;
 	}
 
 	public List<Song> getSearchSongByString(String str) throws SQLException {
 		// TODO Auto-generated method stub
-		List<Song> songs = null;
-		Song song = new Song();
+		List<Song> songs = new ArrayList<Song>();
+		
 		Connection currentCon = ConnectionManager.getConnection();
 	    Statement statement= (Statement) currentCon.createStatement();
-		String sql = "SELECT * FROM song WHERE CONCAT(name, description) LIKE '%"+str+"%'";
+		String sql = "SELECT * FROM song WHERE name LIKE '%"+str+"%'";
+		System.out.println(sql);
 		ResultSet rs = statement.executeQuery(sql);
 		if(rs.next())
 		{
+			Song song = new Song();
 			song.setId(rs.getInt("id"));
 			song.setDescription(rs.getString("description"));
 			song.setName(rs.getString("name"));
-			song.setNumLke(rs.getInt("num_like"));
-			song.setType(rs.getInt("type"));
-			song.setIdAuthor(rs.getInt("id_author"));
+			song.setAlbumID(rs.getInt("id_Album"));
 			songs.add(song);
+			
 		}
 		return songs;
 	}
