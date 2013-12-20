@@ -4,6 +4,9 @@
 <link rel="stylesheet" type="text/css" href="dec/css/home.css"/>
 <ul>
                                 
+                                <li><a href = "./index.jsp"><strong>INDEX</strong></a>
+                                    
+                                </li> 
                                 <li><a href = "cdlist.jsp"><strong>CD<strong></a>
                                         <!--  <ul>
                                         <li><a href = "./WebRoot/pop1.jsp">Blue</a></li>
@@ -27,9 +30,7 @@
                                         </ul>
                                 </li>-->
 
-                                <li><a href = "./index.jsp"><strong>INDEX</strong></a>
-                                    
-                                </li> 
+                                
                               <li><a href = "./search.jsp">SEARCH</a>
                                     
                                 </li>   

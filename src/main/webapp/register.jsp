@@ -26,7 +26,7 @@
     
 </style>
 </head>
-<body background="WebRoot/dec/img/background.jpg">
+<body>
 <div class ="Layout">
 <div class="header" style="background:url(WebRoot/dec/img/cdworld1.png)" ><%@include file="WebRoot/header.jsp"%>
 <!--<img src="WebRoot/dec/img/cd1.png" width="100%" height="100%"/> -->
