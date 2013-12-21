@@ -5,6 +5,11 @@
 <head><meta charset="utf-8" />
 <title>CD</title>
 <link rel="stylesheet" type="text/css" href="WebRoot/dec/css/home.css"/>
+<style type="text/css">
+                 a:visited{color:#666666;}
+                 a:hover{color:#FFFFFF;}                   
+</style>
+
 </head>
 <body><!-- background="WebRoot/dec/img/background.jpg" -->
 

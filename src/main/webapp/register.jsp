@@ -4,12 +4,11 @@
 <head><meta charset="utf-8" />
 <title>CD</title>
 <link rel="stylesheet" href="WebRoot/dec/css/home.css"/>
-<script type="text/javascript" src="js/register.js" ></script>  
-<script type="text/javascript" src="js/verification.js" ></script>
+<script type="text/javascript" src="WebRoot/js/register.js" ></script>  
+<script type="text/javascript" src="WebRoot/js/verification.js" ></script>
 <style type="text/css">
         .code
         {
-            background-image:url(WebRoot/dec/imgs/yanzheng1.jpg);
             font-family:Arial;
             font-style:italic;
             color:Red;

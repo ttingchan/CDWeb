@@ -7,7 +7,8 @@
 <link rel="stylesheet" type="text/css" href="WebRoot/dec/css/home.css"/>
 <style type="text/css">
             
-                   
+                h4 a:visited{color:#000000;}
+                h4 a:hover{color:#FFFFFF;}    
                 table tr td{width: 230px; height: 50px;text-align: left;}
         </style>
 </head>

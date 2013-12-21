@@ -14,7 +14,7 @@
 <h4>forgot? register</h4>-->
 <form action=LoginServlet method="get">
   <p style="text-align:left;font-family:Times;color:white">USERNAME: <input type="text" name="fname" /></p>
-  <p style="text-align:left;font-family:Times;color:white">PASSWORD: <input type="text" name="lname" /></p>
+  <p style="text-align:left;font-family:Times;color:white">PASSWORD: <input type="password" name="lname" /></p>
   <input type="submit" value="LOGIN" style="font-family:Times"/>&nbsp&nbsp&nbsp<a href = "forgotpasswd.jsp" style="font-family:Times">FORGOT?</a>&nbsp&nbsp<a href = "register.jsp" style="font-family:Times"> REGISTER</a>
 </form>
 </div>
