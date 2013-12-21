@@ -2,6 +2,7 @@ package servlet;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -22,9 +23,10 @@ public class SearchServlet extends HttpServlet {
 		AlbumDAO searchRe = new AlbumDAO();
 		SongDAO songRe = new SongDAO();
 		AuthorDAO authorRe = new AuthorDAO();
-		List<Song> songSearch = null;
-		List<Album> albumSearch = null;
-		List<Author> authorSearch = null;
+		List<Song> songSearch = new ArrayList<Song>();
+		List<Album> albumSearch = new ArrayList<Album>();
+		List<Author> authorSearch = new ArrayList<Author>();
+		Boolean result = (songSearch==null && albumSearch==null && authorSearch== null);
 		try {
 			albumSearch = searchRe.getSearchAlbumByString(search);
 			songSearch = songRe.getSearchSongByString(search);
@@ -38,8 +40,10 @@ public class SearchServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 		if(albumSearch == null && songSearch == null && authorSearch == null)
 		{
+			
 			String message = "Sorry, there is no result for your search";
-			request.setAttribute("noResult", message);			
+			request.setAttribute("noResult", message);	
+			request.setAttribute("result", result);
 		}
 		else
 		{

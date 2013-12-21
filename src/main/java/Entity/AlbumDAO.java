@@ -64,8 +64,8 @@ public class AlbumDAO implements RowMapper<Album>
 		Connection currentCon = ConnectionManager.getConnection();
 	    Statement statement= (Statement) currentCon.createStatement();
 		String sql = "SELECT * FROM album";
-		System.out.println(sql);
 		ResultSet rs = statement.executeQuery(sql);
+		int i=0;
 		if(rs.next())
 		{
 			Album album= new Album();
@@ -77,11 +77,12 @@ public class AlbumDAO implements RowMapper<Album>
 			album.setAuthorId(rs.getInt("id_author"));
 			album.setImgURL(rs.getString("img_url"));
 			albums.add(album);
-		}
-		
-		return albums;
-		
+			i++;
+		}		
+		System.out.println(albums.size() + i);
+		return albums;		
 	}
+	
 	public Album getAlbumContent(String str) throws SQLException
 	{
 		Connection currentCon = ConnectionManager.getConnection();
@@ -89,6 +90,7 @@ public class AlbumDAO implements RowMapper<Album>
 	    Album album = new Album();
 	    
 	    String sql = "SELECT * FROM album WHERE name = "+str+"";
+	    System.out.println(sql);
 	    ResultSet rs = statement.executeQuery(sql);
 	    if(rs.next())
 	    {

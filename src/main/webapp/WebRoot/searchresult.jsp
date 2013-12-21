@@ -1,45 +1,100 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ page import = "Entity.*"%>
+<%@ page language="java" import="java.util.*" %>  
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
-<c:if test="${searchResult == null}">
+<c:when test="${result == true}">
 <div>
 	<% 
 	String attribut = (String) request.getAttribute("noResult");
 		out.println(attribut);
 		%>
-</c:if>
+</c:when>
+
+<c:otherwise>
+<%
+	List<Album> listAlbum = (List) request.getAttribute("albumResult");
+	List<Song> listSong = (List) request.getAttribute("songResult");
+	List<Song> listAuthor = (List) request.getAttribute("authorResult");
+
+%>
+
 
 <div class="content">
-<table align="center" style="font-family:Times" width="300px" height="100px">
-<h3 align="center">Author</h3>
-<tr>
-<th>Author</th><th>Album</th>
-</tr>
-<tr><td align="center">Yves</td><td align="center">album</td></tr>
-
-
-</table>
-<h3 align="center">Album</h3>
+<h1>Here is the result of search</h1>
+<c:if test = "${albumSearch != null }">
+<h2>the Album result</h2>
 <table align="center" style="font-family:Times" width="300px" height="100px">
 
-<tr>
-<th>Album</strong></th><th>Price</th><th>Type</th>
-</tr>
-<tr><td align="center">album</td><td align="center">price</td><td align="center">Pop</td></tr>
+	<tr>
+	<th>Album Name</th>
+	<th>Price</th>
+	<th>Date</th>
+	<th>Description</th>
+	</tr>
 
-
+	<%
+		for(int i=0; i<listAlbum.size();i++)
+		{
+			Album album = (Album) listAlbum.get(i);
+	%>
+	<tr>
+		<td align="center"><a href="AlbumServlet?showCD= '<%=album.getName() %>' "><%=album.getName() %></a></td>
+		<td align="center"><%=album.getPrice() %></td>
+		<td align="center"><%=album.getIssuingDate() %></td>
+		<td align="center"><%=album.getDescription() %></td>
+	</tr>
+	<%
+		}
+	%>
 </table>
-<h3 align="center">Song</h3>
+</c:if>
+
+<c:if test = "${songSearch != null }">
+<h2>the Song result</h2>
 <table align="center" style="font-family:Times" width="300px" height="100px">
 
-<tr>
-<th>Song</strong></th><th>Album</th>
-</tr>
-<tr><td align="center">twinkle</td><td align="center">album</td></tr>
+	<tr>
+	<th>Song Name</th>
+	</tr>
 
-
+	<%
+		for(int i=0; i<listAlbum.size();i++)
+		{
+			Album album = (Album) listAlbum.get(i);
+	%>
+	<tr>
+		<td align="center"><%=album.getName() %></td>
+	</tr>
+	<%
+		}
+	%>
 </table>
+</c:if>
+
+<c:if test = "${authorSearch != null }">
+<h2>the Author result</h2>
+<table align="center" style="font-family:Times" width="300px" height="100px">
+
+	<tr>
+	<th>Author Name</th>
+	</tr>
+
+	<%
+		for(int i=0; i<listAlbum.size();i++)
+		{
+			Album album = (Album) listAlbum.get(i);
+	%>
+	<tr>
+		<td align="center"><%=album.getName() %></td>
+	</tr>
+	<%
+		}
+	%>
+</table>
+</c:if>
+</c:otherwise>
 </div>
 
 

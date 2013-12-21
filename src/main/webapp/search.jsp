@@ -11,16 +11,10 @@
 <div class ="Layout">
 	<div class="header" style="background:url(WebRoot/dec/img/cdworld1.png)" >
 		<%@include file="WebRoot/header.jsp"%>
-	</div>
+	</div>	
 	<div class="nav"><%@include file="WebRoot/nav.jsp"%></div>
 	<div class="content">
-		</br></br></br>
-		<div>
-			<form method="get" action =SearchServlet align="center">
-				<input type="text" name="search"/>
-				<input type="submit" name="submit" value="search"/>
-			</form>
-		</div>
+		
 		  <%@include file="WebRoot/searchresult.jsp"%>
 	</div>
 	<div class="bot">

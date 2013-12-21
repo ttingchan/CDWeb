@@ -24,6 +24,11 @@
     <servlet-class>servlet.AlbumServlet</servlet-class>
     </servlet>
     
+    <servlet>
+    <servlet-name>ListAlbumServlet</servlet-name>
+    <servlet-class>servlet.ListAlbumServlet</servlet-class>
+    </servlet>
+    
   <servlet-mapping>
     <servlet-name>LoginServlet</servlet-name>
     <url-pattern>/LoginServlet</url-pattern>
@@ -42,6 +47,11 @@
   <servlet-mapping>
   	<servlet-name>AlbumServlet</servlet-name>
   	<url-pattern>/AlbumServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>ListAlbumServlet</servlet-name>
+  	<url-pattern>/ListAlbumServlet</url-pattern>
   </servlet-mapping>
  
 </web-app>

@@ -2,6 +2,7 @@ package servlet;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -21,17 +22,11 @@ public class ListAlbumServlet extends HttpServlet
 {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
 	{
-		String search = request.getParameter("search");
 		AlbumDAO searchRe = new AlbumDAO();
-		SongDAO songRe = new SongDAO();
-		AuthorDAO authorRe = new AuthorDAO();
-		List<Song> songSearch = null;
-		List<Album> albumSearch = null;
-		List<Author> authorSearch = null;
+		List<Album> albumList = new ArrayList<Album>();
 		try {
-			albumSearch = searchRe.getSearchAlbumByString(search);
-			songSearch = songRe.getSearchSongByString(search);
-			authorSearch = authorRe.getSearchAuthorByString(search);
+			albumList = searchRe.getAllAlbum();
+			System.out.println(albumList.size());
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -39,21 +34,17 @@ public class ListAlbumServlet extends HttpServlet
 	//	List<Song> songSearch = searchRe.getSearchSongByString(search);
 	//	List<Author> authorSearch = searchRe.getSearchAuthorByString(search);
 		HttpSession session = request.getSession();
-		if(albumSearch == null && songSearch == null && authorSearch == null)
+		if(albumList == null)
 		{
 			String message = "Sorry, there is no result for your search";
 			request.setAttribute("noResult", message);			
 		}
 		else
 		{
-			if(albumSearch != null)
-				request.setAttribute("albumResult", albumSearch);
-			if(songSearch != null)
-				request.setAttribute("songResult", songSearch);
-			if(authorSearch != null)
-				request.setAttribute("authorResult", authorSearch);
+			if(albumList != null)
+				request.getSession().setAttribute("CDList", albumList);
 		}
-		this.getServletContext().getRequestDispatcher("/search.jsp").forward(request, response);		
+		this.getServletContext().getRequestDispatcher("/cdlist.jsp").forward(request, response);		
 	}
 
 }

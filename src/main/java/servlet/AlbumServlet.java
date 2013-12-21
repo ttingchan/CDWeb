@@ -2,6 +2,8 @@ package servlet;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServlet;
@@ -20,8 +22,10 @@ public class AlbumServlet extends HttpServlet
 		ServletContext sc = getServletContext();
 		AlbumDAO albumDetail = new AlbumDAO();
 		Album album = new Album();
+		List<Album> albumRecord =new ArrayList<Album>();
 		try {
 			album = albumDetail.getAlbumContent(str);
+			albumRecord = albumDetail.getAllAlbum();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -29,7 +33,6 @@ public class AlbumServlet extends HttpServlet
 		if(album != null)
 		{
 			request.getSession().setAttribute("CDdetail", album);
-			//request.setAttribute("CDdetail", album);
 			response.sendRedirect("cddetail.jsp?cd="+album.getName()+"");
 		}
 //		String path = sc.getServletNames()request;

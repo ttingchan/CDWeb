@@ -22,13 +22,13 @@
 
 <div class="content">
 </br></br></br>
-<form method="post" action=LoginServlet align="center">
-                        <input type="text" class="searchtext"/>&nbsp&nbsp
-                        <input type="submit" value="search CD" class="searchbutton1" style="font-size:30px;font-family:Times"/>   
-                        
-                    </form></br></br></br>
-                    <h2 align="center">You can search by author, type, song and album</h2>
-					<h2 align="center"><a href="login.jsp">LOGIN NOW</a></h2>
+	<form method="get" action=SearchServlet align="center">
+       <input type="text" class="search" name="search"/>&nbsp&nbsp
+       <input type="submit" value="search CD" class="searchbutton1" style="font-size:30px;font-family:Times"/>   
+       
+       </form></br></br></br>
+       <h2 align="center">You can search by author, type, song and album</h2>
+<h2 align="center"><a href="login.jsp">LOGIN NOW</a></h2>
 </div>
 
 <div class="bot">

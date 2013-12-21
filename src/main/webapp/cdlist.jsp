@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ page import = "Entity.*"%>
+<%@ page language="java" import="java.util.*" %>  
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -24,13 +26,26 @@
 <table align="center" style="font-family:Times" width="300px" height="100px">
 <h3 align="center">CD</h3>
 <tr>
-<th>Author</th><th>Album</th>
+	<th>Album Name</th>
+	<th>Price</th>
+	<th>Date</th>
+	<th>Description</th>
 </tr>
+<%
+	List<Album> list = (List) session.getAttribute("CDList");
+	System.out.println(list.size());
+	for(int i=0; i< list.size();i++)
+	{
+		
+		Album album = (Album) list.get(i);
+		%>
 <tr>
-	<td align="center"><a href="AlbumServlet?showCD='1st Amendment'">1st Amendment</a></td>
-	<td align="center">album</td>
+	<td align="center"><a href="AlbumServlet?showCD= '<%=album.getName() %>' "><%=album.getName() %></a></td>
+	<td align="center"><%=album.getPrice() %></td>
+	<td align="center"><%=album.getIssuingDate() %></td>
+	<td align="center"><%=album.getDescription() %></td>
 </tr>
-
+<%} %>
 
 </table>
 </div>
